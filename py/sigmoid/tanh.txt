@@ -1,0 +1,280 @@
+tanh approximation error summary (x in [-4,4], step = 2^-16)
+===========================================================
+
+Averages:
+  Avg abs error (tanh0): 0.011076070608
+  Avg abs error (tanh ): 0.000116059521
+  Avg %   error (tanh0): 1.424366359330 %
+  Avg %   error (tanh ): 0.020591159929 %
+
+Maximums:
+  Max abs error (tanh0): 0.035437679720 at x=-1.699936
+  Max abs error (tanh ): 0.000637905583 at x=-1.737259
+  Max %   error (tanh0): 6.299382503110 %
+  Max %   error (tanh ): 1.970303868386 %
+
+===========================================================
+Near-zero region diagnostics (|x| < 0.001):
+===========================================================
+Note: x ≈ 0 detected (x=-0.0009918213), tanh_ref=-0.0009918210
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591
+Note: x ≈ 0 detected (x=-0.0009765625), tanh_ref=-0.0009765622
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305179
+Note: x ≈ 0 detected (x=-0.0009613037), tanh_ref=-0.0009613034
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591
+Note: x ≈ 0 detected (x=-0.0009460449), tanh_ref=-0.0009460446
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305179
+Note: x ≈ 0 detected (x=-0.0009307861), tanh_ref=-0.0009307859
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591
+Note: x ≈ 0 detected (x=-0.0009155273), tanh_ref=-0.0009155271
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305178
+Note: x ≈ 0 detected (x=-0.0009002686), tanh_ref=-0.0009002683
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152590
+Note: x ≈ 0 detected (x=-0.0008850098), tanh_ref=-0.0008850095
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=-0.0008697510), tanh_ref=-0.0008697508
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=-0.0008544922), tanh_ref=-0.0008544920
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=-0.0008392334), tanh_ref=-0.0008392332
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=-0.0008239746), tanh_ref=-0.0008239744
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=-0.0008087158), tanh_ref=-0.0008087156
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=-0.0007934570), tanh_ref=-0.0007934569
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0007781982), tanh_ref=-0.0007781981
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0007629395), tanh_ref=-0.0007629393
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0007476807), tanh_ref=-0.0007476805
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0007324219), tanh_ref=-0.0007324217
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0007171631), tanh_ref=-0.0007171630
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0007019043), tanh_ref=-0.0007019042
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0006866455), tanh_ref=-0.0006866454
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0006713867), tanh_ref=-0.0006713866
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0006561279), tanh_ref=-0.0006561278
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0006408691), tanh_ref=-0.0006408691
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0006256104), tanh_ref=-0.0006256103
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0006103516), tanh_ref=-0.0006103515
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=-0.0005950928), tanh_ref=-0.0005950927
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=-0.0005798340), tanh_ref=-0.0005798339
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0005645752), tanh_ref=-0.0005645751
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0005493164), tanh_ref=-0.0005493164
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0005340576), tanh_ref=-0.0005340576
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0005187988), tanh_ref=-0.0005187988
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0005035400), tanh_ref=-0.0005035400
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0004882812), tanh_ref=-0.0004882812
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0004730225), tanh_ref=-0.0004730224
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0004577637), tanh_ref=-0.0004577636
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0004425049), tanh_ref=-0.0004425049
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0004272461), tanh_ref=-0.0004272461
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0004119873), tanh_ref=-0.0004119873
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0003967285), tanh_ref=-0.0003967285
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0003814697), tanh_ref=-0.0003814697
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0003662109), tanh_ref=-0.0003662109
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0003509521), tanh_ref=-0.0003509521
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0003356934), tanh_ref=-0.0003356933
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0003204346), tanh_ref=-0.0003204346
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0003051758), tanh_ref=-0.0003051758
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0002899170), tanh_ref=-0.0002899170
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0002746582), tanh_ref=-0.0002746582
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0002593994), tanh_ref=-0.0002593994
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0002441406), tanh_ref=-0.0002441406
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0002288818), tanh_ref=-0.0002288818
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0002136230), tanh_ref=-0.0002136230
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0001983643), tanh_ref=-0.0001983643
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0001831055), tanh_ref=-0.0001831055
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0001678467), tanh_ref=-0.0001678467
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0001525879), tanh_ref=-0.0001525879
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0001373291), tanh_ref=-0.0001373291
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0001220703), tanh_ref=-0.0001220703
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0001068115), tanh_ref=-0.0001068115
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0000915527), tanh_ref=-0.0000915527
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0000762939), tanh_ref=-0.0000762939
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0000610352), tanh_ref=-0.0000610352
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0000457764), tanh_ref=-0.0000457764
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=-0.0000305176), tanh_ref=-0.0000305176
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=-0.0000152588), tanh_ref=-0.0000152588
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0000000000), tanh_ref=0.0000000000
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000000000
+Note: x ≈ 0 detected (x=0.0000152588), tanh_ref=0.0000152588
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0000305176), tanh_ref=0.0000305176
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0000457764), tanh_ref=0.0000457764
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0000610352), tanh_ref=0.0000610352
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0000762939), tanh_ref=0.0000762939
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0000915527), tanh_ref=0.0000915527
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0001068115), tanh_ref=0.0001068115
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0001220703), tanh_ref=0.0001220703
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0001373291), tanh_ref=0.0001373291
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0001525879), tanh_ref=0.0001525879
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0001678467), tanh_ref=0.0001678467
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0001831055), tanh_ref=0.0001831055
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0001983643), tanh_ref=0.0001983643
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0002136230), tanh_ref=0.0002136230
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0002288818), tanh_ref=0.0002288818
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0002441406), tanh_ref=0.0002441406
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0002593994), tanh_ref=0.0002593994
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0002746582), tanh_ref=0.0002746582
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0002899170), tanh_ref=0.0002899170
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0003051758), tanh_ref=0.0003051758
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0003204346), tanh_ref=0.0003204346
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0003356934), tanh_ref=0.0003356933
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0003509521), tanh_ref=0.0003509521
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0003662109), tanh_ref=0.0003662109
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0003814697), tanh_ref=0.0003814697
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0003967285), tanh_ref=0.0003967285
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0004119873), tanh_ref=0.0004119873
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0004272461), tanh_ref=0.0004272461
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0004425049), tanh_ref=0.0004425049
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0004577637), tanh_ref=0.0004577636
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0004730225), tanh_ref=0.0004730224
+      Absolute errors: tanh0=0.0000152588, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0004882812), tanh_ref=0.0004882812
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0005035400), tanh_ref=0.0005035400
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0005187988), tanh_ref=0.0005187988
+      Absolute errors: tanh0=0.0000000000, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0005340576), tanh_ref=0.0005340576
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0005493164), tanh_ref=0.0005493164
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0005645752), tanh_ref=0.0005645751
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152588
+Note: x ≈ 0 detected (x=0.0005798340), tanh_ref=0.0005798339
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305176
+Note: x ≈ 0 detected (x=0.0005950928), tanh_ref=0.0005950927
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0006103516), tanh_ref=0.0006103515
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0006256104), tanh_ref=0.0006256103
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0006408691), tanh_ref=0.0006408691
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0006561279), tanh_ref=0.0006561278
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0006713867), tanh_ref=0.0006713866
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0006866455), tanh_ref=0.0006866454
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0007019043), tanh_ref=0.0007019042
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0007171631), tanh_ref=0.0007171630
+      Absolute errors: tanh0=0.0000152587, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0007324219), tanh_ref=0.0007324217
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0007476807), tanh_ref=0.0007476805
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0007629395), tanh_ref=0.0007629393
+      Absolute errors: tanh0=0.0000000001, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0007781982), tanh_ref=0.0007781981
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152589
+Note: x ≈ 0 detected (x=0.0007934570), tanh_ref=0.0007934569
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305177
+Note: x ≈ 0 detected (x=0.0008087158), tanh_ref=0.0008087156
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=0.0008239746), tanh_ref=0.0008239744
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=0.0008392334), tanh_ref=0.0008392332
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=0.0008544922), tanh_ref=0.0008544920
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=0.0008697510), tanh_ref=0.0008697508
+      Absolute errors: tanh0=0.0000152586, tanh=0.0000152590
+Note: x ≈ 0 detected (x=0.0008850098), tanh_ref=0.0008850095
+      Absolute errors: tanh0=0.0000000002, tanh=0.0000305178
+Note: x ≈ 0 detected (x=0.0009002686), tanh_ref=0.0009002683
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152590
+Note: x ≈ 0 detected (x=0.0009155273), tanh_ref=0.0009155271
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305178
+Note: x ≈ 0 detected (x=0.0009307861), tanh_ref=0.0009307859
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591
+Note: x ≈ 0 detected (x=0.0009460449), tanh_ref=0.0009460446
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305179
+Note: x ≈ 0 detected (x=0.0009613037), tanh_ref=0.0009613034
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591
+Note: x ≈ 0 detected (x=0.0009765625), tanh_ref=0.0009765622
+      Absolute errors: tanh0=0.0000000003, tanh=0.0000305179
+Note: x ≈ 0 detected (x=0.0009918213), tanh_ref=0.0009918210
+      Absolute errors: tanh0=0.0000152585, tanh=0.0000152591

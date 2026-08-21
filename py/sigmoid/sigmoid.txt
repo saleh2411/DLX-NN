@@ -1,0 +1,22 @@
+Sigmoid approximation error summary (x in [-10,10], step = 2^-16)
+=============================================================
+
+Averages:
+  Avg abs error (sigmoid0): 0.004459385049
+  Avg abs error (sigmoid ): 0.017878508982
+  Avg %   error (sigmoid0): 31.331862914041 %
+  Avg %   error (sigmoid ): 52.239677834637 %
+
+Maximums:
+  Max abs error (sigmoid0): 0.017719316788 at x=3.399887
+  Max abs error (sigmoid ): 0.133238579716 at x=-1.124985
+  Max %   error (sigmoid0): 100.000000000000 %
+  Max %   error (sigmoid ): 236.984398400535 %
+
+Mean Squared Error:
+  MSE  (sigmoid0): 4.696884750287e-05
+  MSE  (sigmoid ): 1.559352223023e-03
+  RMSE (sigmoid0): 6.853382194425e-03
+  RMSE (sigmoid ): 3.948863409924e-02
+  Max sq error (sigmoid0): 3.139741874494e-04
+  Max sq error (sigmoid ): 1.775251912482e-02

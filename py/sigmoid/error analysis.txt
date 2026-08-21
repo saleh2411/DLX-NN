@@ -1,0 +1,48 @@
+Error analysis: tanh0 vs tanh from sigmoid
+==========================================
+
+Short answer: tanh0 uses sigma0 at 2x and then scales by 2, so the error is
+"two times the sigmoid0 error at a different input." The error shape and the
+percentage scale are therefore not expected to be a simple 2x copy of the
+sigmoid plot, and small absolute errors near zero can show up as large percent
+errors.
+
+Why the error does not look like a simple 2x scaling
+----------------------------------------------------
+1) Different input point (2x)
+   tanh0(x) = 2*sigma0(2x) - 1
+   tanh (x) = 2*sigma (2x) - 1
+   So the error is:
+     e_tanh(x) = tanh0(x) - tanh(x) = 2*(sigma0(2x) - sigma(2x)).
+   This DOES double the error at the SAME argument, but the argument is 2x,
+   not x. If sigma0's error varies with x (it does), then e_tanh(x) will look
+   like the sigmoid0 error curve compressed toward the origin, not simply 2x
+   taller everywhere.
+
+2) Early saturation due to the sigma0 clamp
+   In sigmoid0, any x >= 5 returns 1. That means tanh0 saturates when |x| >= 2.5
+   because the input to sigma0 is 2x. The true tanh still changes slightly past
+   that region, so tanh0 can deviate more in the tails. This also shifts where
+   the max error appears compared to sigmoid0.
+
+3) Percent error vs absolute error
+   tanh(x) is near 0 around x=0, so the denominator for percent error is very
+   small. Even tiny absolute errors in tanh0 can look like several percent.
+   This is why you can see ~6-8% peaks even when the absolute error is only a
+   few 1e-2 or less. The percent error is not directly comparable to sigmoid's
+   percent error because the reference values are different.
+
+4) Quantization and piecewise linear slope mismatch
+   sigma0 is a piecewise linear approximation with Q16.16 rounding. When you
+   compute 2x (still Q16.16) and then do the piecewise segments, the rounding
+   and slope changes can introduce small discontinuities. The odd symmetry
+   should hold to within 1 LSB, but you may see tiny asymmetries from rounding.
+
+Takeaway
+--------
+- The tanh0 error IS tied to sigmoid0 error by e_tanh(x) = 2*e_sigmoid(2x).
+- Because the error is evaluated at 2x, plus early saturation and percent error
+  scaling, the tanh0 plot will not look like a simple 2x version of the sigmoid
+  error plot.
+- The larger percent errors near x=0 are mainly a denominator effect, not a
+  sudden growth in absolute error.

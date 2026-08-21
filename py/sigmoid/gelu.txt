@@ -1,0 +1,14 @@
+GELU approximation error summary (x in [-5,5], step = 2^-16)
+===========================================================
+
+Notes:
+  Percentage error is reported as % of full-scale (FS), not relative-to-y.
+  FS = max(|GELU_exact(x)|) over sweep = 4.999998566742
+
+Averages:
+  Avg abs error (gelu0): 0.012449721532
+  Avg %FS error (gelu0): 0.248994502023 %
+
+Maximums:
+  Max abs error (gelu0): 0.055509818158 at x=2.134750
+  Max %FS error (gelu0): 1.110196681405 % at x=2.134750

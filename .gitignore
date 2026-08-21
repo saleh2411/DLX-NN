@@ -1,0 +1,34 @@
+# Simulation outputs
+*.vcd
+*.fst
+*.vpd
+*.wlf
+sim_*
+
+
+# Logs
+*.log
+
+# Binaries / build outputs
+sim
+#tanh
+#GELU
+*.out
+# *.exe
+*.o
+*.a
+*.so
+*.dylib
+*.h
+*.cpp
+
+# Temp
+*.tmp
+.DS_Store
+
+# Office lock / owner files
+~$*
+
+# Python
+__pycache__/
+*.pyc
