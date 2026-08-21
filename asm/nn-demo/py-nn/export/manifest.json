@@ -1,0 +1,18 @@
+{
+  "H": 16,
+  "resolution": "16x16",
+  "n_inputs": 256,
+  "sample_index": 0,
+  "label": 0,
+  "input_shift": 14,
+  "pixel_max": 4,
+  "layout": [
+    "W1DATA[H*256]",
+    "B1DATA[H]",
+    "W2DATA[10*H]",
+    "B2DATA[10]"
+  ],
+  "preds": {
+    "tanh": 0
+  }
+}

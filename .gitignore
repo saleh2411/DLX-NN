@@ -5,6 +5,7 @@
 *.wlf
 sim_*
 
+*.lst
 
 # Logs
 *.log

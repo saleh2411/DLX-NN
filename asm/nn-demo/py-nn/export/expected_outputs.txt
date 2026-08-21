@@ -1,0 +1,18 @@
+Expected outputs for the sample digit (what the asm must reproduce)
+==================================================================
+optdigits test index : 0
+true label           : 0
+
+[tanh+softmax]  predicted class = 0   (argmax of the 10 output logits)
+  class    logit(hex)    logit(float)
+      0  0x00108103       16.503952  <-- argmax
+      1  0xFFF276E2      -13.535614
+      2  0x000326EC        3.152039
+      3  0xFFFCC22E       -3.241486
+      4  0xFFFAE75F       -5.096207
+      5  0x000539F3        5.226364
+      6  0xFFFF25F4       -0.851746
+      7  0xFFFDCEF0       -2.191650
+      8  0xFFFD6AF0       -2.582275
+      9  0x0001F1C2        1.944366
+
