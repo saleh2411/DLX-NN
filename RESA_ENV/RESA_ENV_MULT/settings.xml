@@ -1,0 +1,35 @@
+<settings>
+	<!-- RAM start&end addresses for Resa Monitor, in hexa-->
+	<RAMstart>0</RAMstart>
+	<RAMend>fffff</RAMend>
+
+	<!-- Slave ranges for Resa Monitor, in hexa.-->
+	<SLAVEbase>1000000</SLAVEbase>
+	<SLAVEstart>0</SLAVEstart>
+	<SLAVEend>3ff</SLAVEend>
+
+	<!-- Do we allow user to configure .bit file? -->
+	<configureBit>true</configureBit>
+
+	<!-- How many steps in "run until"... until we get message?-->
+	<!-- This is for HARDWARE-->
+	<stepsUntilMsgHardware>10000</stepsUntilMsgHardware>
+
+	<!-- after how many pulses we decide "error on response" -->
+	<hardwareWaitCycles>30</hardwareWaitCycles>
+
+	<!-- test RAM area for d/ling dlxtest.cod -->	
+	<checkAddressStart>0</checkAddressStart>
+	<checkAddressEnd>1000</checkAddressEnd>
+	
+	<!-- address of USB port, in hexa-->
+	<!-- USB -->
+	<USB>0</USB>
+
+	<!-- Directory for DLX.bit and dlxtest.cod -->
+	<directory>c:\project\monitor\</directory>
+
+	<!-- Directory for XSTOOLS - XSLOAD and XSTEST -->
+	<XSdirectory>C:\Program Files (x86)\XSTOOLs\</XSdirectory>
+</settings>
+

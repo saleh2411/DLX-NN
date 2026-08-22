@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Runas Spc Anleitung und Beispiele</title>
+
+
+  <meta name="DESCRIPTION" content="Runas + Password + Encryption = Runasspc">
+
+  <meta name="KEYWORDS" content="runas passwort password runasspc">
+
+  <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+  <meta http-equiv="Expires" content="-1">
+
+  <style type="text/css">
+<!--
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:active {text-decoration:none;}
+a:hover {text-decoration:none;}
+//-->
+  </style>
+</head>
+
+
+<body style="color: rgb(0, 0, 0); background-color: rgb(230, 230, 230);" alink="#000096" link="#000096" vlink="#000096">
+
+<table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+
+    <tr>
+
+      <td style="width: 190px;">&nbsp;<br>
+
+      <img style="width: 140px; height: 113px;" alt="Logo" src="images/logo.gif"></td>
+
+      <td style="width: 450px; font-family: Arial;"><big><big><img style="width: 200px; height: 1px;" alt="underline" src="images/line.gif"><br>
+
+&nbsp;ROBOTRONIC.DE<br>
+
+      <img style="width: 200px; height: 1px;" alt="underline" src="images/line.gif"><br>
+
+&nbsp;</big></big></td>
+
+      <td style="vertical-align: bottom;"> <big><big>RunasSpc
+Anleitung und Beispiele</big></big> </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+<table style="text-align: left;" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody valign="top">
+
+    <tr>
+
+      <td style="width: 200px;"> <img style="width: 200px; height: 40px;" alt="point" src="images/point.gif"><!-- ******** Begin Menue ************* -->
+      <table style="text-align: left; width: 120px;" border="0" cellpadding="0" cellspacing="0">
+
+        <tbody>
+
+          <tr>
+
+            <td style="height: 30px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a href="http://www.robotronic.de/index.html"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+Home&nbsp;&nbsp;&nbsp;&nbsp; </span><br>
+
+            </a></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a style="" href="http://www.robotronic.de/contact.html">&nbsp;&nbsp;
+Contact&nbsp;&nbsp; </a><br>
+
+            </td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a href="http://www.robotronic.de/agb.html"><span style="">&nbsp;&nbsp;&nbsp;&nbsp;
+AGB &nbsp;&nbsp;</span> </a></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_aktiv.gif"><a href="http://www.robotronic.de/runasspc.html"><span style="">&nbsp;
+Runas Spc&nbsp; </span><br>
+
+            </a></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a href="http://www.robotronic.de/runasrobde.html"><span style="">&nbsp;
+Runas Rob&nbsp; </span><br>
+
+            </a></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a href="http://www.robotronic.de/regeditPro.html"><span style="">&nbsp;
+Regedit Pro&nbsp; </span><br>
+
+            </a></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="height: 10px;"></td>
+
+          </tr>
+
+          <tr style="font-weight: bold;">
+
+            <td style="text-align: center; vertical-align: middle; height: 30px;" background="images/button_nav_grey.gif"><a href="http://www.robotronic.de/orderdeform.php">&nbsp;
+Bestellung&nbsp;&nbsp; </a></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+<!-- **********Ende Menue ************* --> </td>
+
+      <td style="vertical-align: top;"><br>
+
+&nbsp;<a href="guidance.html"><img style="border: 3px solid ; width: 22px; height: 15px;" alt="Runas with password English" src="images/flagge_grossbritannien.gif"></a><a href="anleitung.html"><img style="border: 3px solid ; width: 22px; height: 15px;" alt="Runas with password german" src="images/flagge_deutschland.gif"></a> <br>
+
+      <span style="font-weight: bold;">Runas
++ Passwort + Verschl&uuml;sselung = RunasSpc<br>
+
+      </span><br>
+
+      <a href="http://robotronic.de/runasspc/runasspc.zip">Download
+RunasSpc &gt;&gt;&gt;</a> <br>
+
+      <a href="runasspc.html">RunasSpc Anwendung
+&gt;&gt;&gt;</a> <br>
+
+      <a href="http://www.robotronic.de/orderDeForm.php">Order
+RunasSpc
+&gt;&gt;&gt;</a> <br>
+
+      <span style="font-weight: bold;"><br>
+
+Anleitung RunasSpc</span><br>
+
+      <br>
+
+RunasSpc kann wie in folgendem Aufruf gestartet werden: <br>
+
+runasspc.exe /program:"c:\windows\system32\regedt32.exe" /user:"admin"
+/password:"pass" /quiet <br>
+
+      <img style="" src="images/screenshotsRunasSpcAdmin/Guidancescreenshot5.gif"><br>
+
+Es wird keinerlei Sicherheitspr&uuml;fung durchgef&uuml;hrt und
+das
+Passwort liegt im Klartext vor.<br>
+
+      <br>
+
+Um die Anmeldekennung zu verschl&uuml;sseln
+m&uuml;ssen Sie eine verschl&uuml;sselte Datei generieren. <br>
+
+Das
+k&ouml;nnen Sie &uuml;ber Runasspc.exe (Kommandozeile)
+oder mit dem beigelegten Tool Runasspcadmin.(grafische
+Oberfl&auml;che).<br>
+
+Siehe unten&nbsp; &gt;&gt; Crypt files Beispiele
+&lt;&lt;:<br>
+
+      <br>
+
+Nachdem Sie ein Cryptfile erstellt haben, k&ouml;nnen Sie das
+Cryptfile mit Runasspc wie folgt aufrufen.<br>
+
+A) Wenn das Cryptfiles &gt;&gt; crypt.spc &gt;&gt;
+hei&szlig;t., k&ouml;nnen Sie es mit einem Doppelklick auf
+RunasSpc.exe im selben Verzeichnis starten.<br>
+
+B) Per Drag and Drop. Ziehen Sie das Cryptfile auf Runasspc.exe.<br>
+
+C) &Uuml;ber die Kommandozeile ohne einen Zwischendialog von
+Runasspc durch die Option /quiet<br>
+
+&gt;&gt; c:\runasspcEn\runasspc.exe
+/cryptfile:"pfad\NameOfCryptfile.spc" /quiet&lt;&lt;<br>
+
+D) Erstellen einer Verkn&uuml;pfung&nbsp;<br>
+
+&gt;&gt; c:\runasspcEn\runasspc.exe
+/cryptfile:"pfad\NameOfCryptfile.spc"&lt;&lt;<br>
+
+E) Verbinden Sie die Dateiendung&nbsp;des Cryptfiles*.spc im System
+mit RunasSpc.exe
+(&ouml;ffnen mit). <br>
+
+Sie k&ouml;nnen auch Ihre eigene Dateiendung
+verwenden.<br>
+
+      <br>
+
+      <hr style="width: 100%; height: 2px;"><br>
+
+      <span style="font-weight: bold;">Crypt files
+Beispiele:</span><br>
+
+      <br>
+
+A) <br>
+
+&Uuml;ber die Commandline mit&nbsp;Runasspc.exe (Konsole)<br>
+
+Sie finden Beispiele in der mitgelieferten Datei readme.txt oder
+rufereadme.txtn
+Sie auf &gt;&gt; runasspc -h &gt;&gt;&nbsp; um
+Hilfe zu
+bekommen.<br>
+
+      <br>
+
+B) <br>
+
+Mit RunasSpcAdmin.exe (Grafische Oberfl&auml;che).Sehen sie auch
+unser <a href="http://www.robotronic.de/RunasSpcQuickGuideExample.html">Beispielvideo</a>
+      <br>
+
+      <br>
+
+Screenshot starte Registry unter der lokalen Anmeldekennung
+administrator.<br>
+
+      <img style="" src="images/screenshotsRunasSpcAdmin/screenshot0.gif"><br>
+
+      <br>
+
+Um das Exceldokument molecularWheigtCalculation.xls unter dem
+Dom&auml;nenaccount departmentuser zu starten.<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot1.gif"> <br>
+
+      <br>
+
+Um die MSI Datei acdSee 4.0.msi&nbsp; zu installieren<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot2.gif"> <br>
+
+      <br>
+
+Um eine MSC Datei zu starten wie z.B.die Computerkonsole <br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot3.gif"> <br>
+
+      <br>
+
+Um ein VBScript zu starten.<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot4.gif"> <br>
+
+      <br>
+
+Einen Registrierungseintrag setzen<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot5.gif"> <br>
+
+      <br>
+
+Eine Batchdatei wie .cmd oder .bat zu starten<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot6.gif"> <br>
+
+      <br>
+
+Java installieren mit den Parametern /S /V /qn<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot7.gif"> <br>
+
+      <br>
+
+Eine Batchdatei mit den Parametern optionA optionB optionC starten<br>
+
+      <img alt="screenshot" src="images/screenshotsRunasSpcAdmin/screenshot8.gif"> <br>
+
+      <br>
+
+Umgebungsvariablen verwenden<br>
+
+      <img style="" src="images/screenshotsRunasSpcAdmin/screenshot9.gif"><br>
+
+      <br>
+
+&Uuml;ber rundll32 das Softwareinstallationsapplet aufrufen<br>
+
+      <img style="width: 444px; height: 544px;" alt="screenshot10" src="images/screenshotsRunasSpcAdmin/screenshot10.gif"><br>
+
+      <br>
+
+      <hr style="width: 100%; height: 2px;"><span style="font-weight: bold;"><br>
+
+Kontakt:</span><br>
+
+      <br>
+
+Bei Verbesserungsvorschl&auml;gen, Fehlern oder Fragen<br>
+
+wenden sie sich bitte an:<br>
+
+      <a href="mailto:service@robotronic.de">service@robotronic.de</a><br>
+
+      <hr style="width: 100%; height: 2px;"><br>
+
+      <span style="font-weight: bold;">RunasSpc Lizenz</span><br>
+
+      <br>
+
+Runasspc ist nur f&uuml;r den privaten Gebrauch frei nutzbar.<br>
+
+F&uuml;r Unternehmen gibt es auf den Unternehmensnamen registrierte
+Versionen.<br>
+
+      <br>
+
+      <a href="http://www.robotronic.de/orderDeForm.php">Bestellung
+RunasSpc
+&gt;&gt;&gt;</a><br>
+
+      <a href="http://robotronic.de/runasspc/runasspc.zip">Download
+RunasSpc &gt;&gt;&gt;</a></td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
