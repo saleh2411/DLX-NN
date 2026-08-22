@@ -10,7 +10,7 @@
 //   tanh(x)    = 2*sigmoid(2x) - 1
 //   GELU(x)    = x * sigmoid(1.702*x)
 //
-// function_select encoding (Opcode [1:0]):
+// opcode encoding [1:0]:
 //   2'b00 : Sigmoid
 //   2'b01 : Tanh
 //   2'b10 : GELU
@@ -45,7 +45,6 @@ module sigmoid_subenv (
     // ==========================================================
     // Internal signals
     // ==========================================================
-    //wire [1:0]  function_select; // 2-bit function selector
     wire [31:0] x_gelu; // 1.702*x for GELU
     wire [31:0] x_tanh; // 2*x for Tanh
     wire [31:0] y_tanh; // 2*sigmoid(2x) - 1 for Tanh

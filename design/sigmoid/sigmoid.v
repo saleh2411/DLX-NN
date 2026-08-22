@@ -62,10 +62,6 @@ module sigmoid(
 
         if  (x_neg) y = B_0 - y_pos; //sigmoid(x) = 1 - sigmoid(|x|)
         else   y      = y_pos;
-        
-        // // Optional safety clamp to [0,1] in Q16.16
-        // if (y < X_0) y = X_0;
-        // if (y > B_1) y = B_1;
     end
 
 endmodule
