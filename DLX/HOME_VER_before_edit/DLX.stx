@@ -1,0 +1,97 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to E:/adlx/B1/Week7/HOME_VER/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Parameter xsthdpdir set to E:/adlx/B1/Week7/HOME_VER/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.30 secs
+ 
+--> Reading design: DLX.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\XOR32.v" into library work
+Parsing module <XOR32>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\RAM32x32.v" into library work
+Parsing module <RAM32x32>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\OR32.v" into library work
+Parsing module <OR32>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\MUX2to1.v" into library work
+Parsing module <MUX2to1>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\COMPERATOR.v" into library work
+Parsing module <COMPERATOR>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\AND32.v" into library work
+Parsing module <AND32>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\AEQZ.v" into library work
+Parsing module <AEQZ>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\ADD_SUB.v" into library work
+Parsing module <ADD_SUB>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\SHIFT_ENV.v" into library work
+Parsing module <SHIFT_ENV>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\REG32CE.v" into library work
+Parsing module <REG32CE>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\MUX4to1.v" into library work
+Parsing module <MUX4to1>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\mac_fsm.v" into library work
+Parsing module <mac_fsm>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\IR_ENV.v" into library work
+Parsing module <IR_ENV>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\GPR.v" into library work
+Parsing module <GPR>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\dlx_control.v" into library work
+Parsing module <dlx_control>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\data_path.v" into library work
+Parsing module <data_path>.
+WARNING:HDLCompiler:751 - "E:\adlx\B1\Week7\HOME_VER\data_path.v" Line 57: Redeclaration of ansi port D_OUT_GPR is not allowed
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\control.v" into library work
+Parsing module <control>.
+WARNING:HDLCompiler:751 - "E:\adlx\B1\Week7\HOME_VER\control.v" Line 62: Redeclaration of ansi port busy is not allowed
+Analyzing Verilog file "E:\adlx\B1\Week7\HOME_VER\DLX.v" into library work
+Parsing module <DLX>.
+Parsing VHDL file "E:\adlx\B1\Week7\HOME_VER\ex_top_sch.vhf" into library work
+Parsing entity <ex_top_sch>.
+Parsing architecture <BEHAVIORAL> of entity <ex_top_sch>.
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.08 secs
+ 
+--> 
+
+Total memory usage is 4463696 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

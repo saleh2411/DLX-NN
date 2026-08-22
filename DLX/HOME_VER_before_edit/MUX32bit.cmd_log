@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/MUX32bit.v -lang verilog -prj HOME_VER -o MUX32bit.spl -module MUX32bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 MUX32bit.spl E:/VERILOG_2024/HOME_VER/MUX32bit.sym 
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/MUX32bit.v -lang verilog -prj HOME_VER -o MUX32bit.spl -module MUX32bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 MUX32bit.spl E:/VERILOG_2024/HOME_VER/MUX32bit.sym 

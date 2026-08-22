@@ -1,0 +1,11 @@
+select figure at 824 1281 8 -branches -sn=1
+move instance at 672 1568 to 1232 1248 R0 -keepConn -sn=1
+move instance at 1232 1248 to 1136 1312 R0 -keepConn -sn=1
+add autowire 1136 864 1024 864 8 -sn=1
+add autowire 1136 992 1024 992 8 -sn=1
+add autowire 1136 1120 1040 1120 8 -sn=1
+add autowire 1136 1248 1024 1248 8 -sn=1
+add autowire 1584 1056 1680 1056 8 -sn=1
+add autowire 1584 1184 1680 1184 8 -sn=1
+add autowire 1584 1248 1680 1248 8 -sn=1
+select figure at 454 875 8 -branches -sn=1

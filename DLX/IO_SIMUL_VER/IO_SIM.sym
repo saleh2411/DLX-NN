@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="IO_SIM">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2020-8-7T17:33:7</timestamp>
+    <attr value="IO_SIM" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-416" name="CLK_IN" />
+    <pin polarity="Input" x="0" y="-352" name="RST_IN" />
+    <pin polarity="Input" x="0" y="-288" name="STEP_IN" />
+    <pin polarity="Input" x="0" y="-224" name="AS_N" />
+    <pin polarity="Input" x="0" y="-160" name="WR_N" />
+    <pin polarity="Input" x="0" y="-96" name="MAO(31:0)" />
+    <pin polarity="Input" x="0" y="-32" name="MDO(31:0)" />
+    <pin polarity="Output" x="384" y="-416" name="CLK" />
+    <pin polarity="Output" x="384" y="-320" name="RST" />
+    <pin polarity="Output" x="384" y="-224" name="STEP" />
+    <pin polarity="Output" x="384" y="-128" name="ACK_N" />
+    <pin polarity="Output" x="384" y="-32" name="DO(31:0)" />
+    <graph>
+        <rect width="256" x="64" y="-448" height="448" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-456" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin CLK_IN" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin RST_IN" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin STEP_IN" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin AS_N" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin WR_N" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin MAO(31:0)" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin MDO(31:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-416" type="pin CLK" />
+        <line x2="384" y1="-416" y2="-416" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-320" type="pin RST" />
+        <line x2="384" y1="-320" y2="-320" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-224" type="pin STEP" />
+        <line x2="384" y1="-224" y2="-224" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-128" type="pin ACK_N" />
+        <line x2="384" y1="-128" y2="-128" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="-32" type="pin DO(31:0)" />
+        <rect width="64" x="320" y="-44" height="24" />
+        <line x2="384" y1="-32" y2="-32" x1="320" />
+    </graph>
+</symbol>

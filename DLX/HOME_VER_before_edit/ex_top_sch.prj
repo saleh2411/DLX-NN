@@ -1,0 +1,4 @@
+verilog work "ex_reg_ver.v"
+verilog work "ex_mux_ver.v"
+verilog work "ex_buf_ver.v"
+vhdl work "ex_top_sch.vhf"

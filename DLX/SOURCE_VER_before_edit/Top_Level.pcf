@@ -1,0 +1,1525 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Jul 18 23:40:45 2026
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sdAddr_o<0>" LOCATE = SITE "E4" LEVEL 1;
+COMP "sdAddr_o<1>" LOCATE = SITE "E3" LEVEL 1;
+COMP "sdAddr_o<2>" LOCATE = SITE "D3" LEVEL 1;
+COMP "sdAddr_o<3>" LOCATE = SITE "C3" LEVEL 1;
+COMP "sdAddr_o<4>" LOCATE = SITE "B12" LEVEL 1;
+COMP "sdAddr_o<5>" LOCATE = SITE "A12" LEVEL 1;
+COMP "sdAddr_o<6>" LOCATE = SITE "D12" LEVEL 1;
+COMP "sdAddr_o<7>" LOCATE = SITE "E12" LEVEL 1;
+COMP "sdAddr_o<8>" LOCATE = SITE "G16" LEVEL 1;
+COMP "sdAddr_o<9>" LOCATE = SITE "G12" LEVEL 1;
+COMP "sdAddr_o<10>" LOCATE = SITE "F4" LEVEL 1;
+COMP "sdAddr_o<11>" LOCATE = SITE "G11" LEVEL 1;
+COMP "sdAddr_o<12>" LOCATE = SITE "H13" LEVEL 1;
+COMP "fpgaClk_i" LOCATE = SITE "A9" LEVEL 1;
+COMP "sdClkFb_i" LOCATE = SITE "K12" LEVEL 1;
+COMP "sdBs_o<0>" LOCATE = SITE "H3" LEVEL 1;
+COMP "sdBs_o<1>" LOCATE = SITE "G3" LEVEL 1;
+COMP "sdCe_bo" LOCATE = SITE "H4" LEVEL 1;
+COMP "sdCke_o" LOCATE = SITE "J12" LEVEL 1;
+COMP "sdClk_o" LOCATE = SITE "K11" LEVEL 1;
+COMP "sdWe_bo" LOCATE = SITE "M3" LEVEL 1;
+COMP "sdData_io<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "sdData_io<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "sdData_io<2>" LOCATE = SITE "T5" LEVEL 1;
+COMP "sdData_io<3>" LOCATE = SITE "P5" LEVEL 1;
+COMP "sdData_io<4>" LOCATE = SITE "R5" LEVEL 1;
+COMP "sdData_io<5>" LOCATE = SITE "N5" LEVEL 1;
+COMP "sdData_io<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "sdData_io<7>" LOCATE = SITE "N4" LEVEL 1;
+COMP "sdData_io<8>" LOCATE = SITE "P12" LEVEL 1;
+COMP "sdData_io<9>" LOCATE = SITE "R12" LEVEL 1;
+COMP "sdCas_bo" LOCATE = SITE "L3" LEVEL 1;
+COMP "sdDqmh_o" LOCATE = SITE "L13" LEVEL 1;
+COMP "sdDqml_o" LOCATE = SITE "M4" LEVEL 1;
+COMP "sdRas_bo" LOCATE = SITE "L4" LEVEL 1;
+COMP "sdData_io<10>" LOCATE = SITE "T13" LEVEL 1;
+COMP "sdData_io<11>" LOCATE = SITE "T14" LEVEL 1;
+COMP "sdData_io<12>" LOCATE = SITE "R14" LEVEL 1;
+COMP "sdData_io<13>" LOCATE = SITE "T15" LEVEL 1;
+COMP "sdData_io<14>" LOCATE = SITE "T12" LEVEL 1;
+COMP "sdData_io<15>" LOCATE = SITE "P11" LEVEL 1;
+PIN XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n0025_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n0025"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul2_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul2"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul2_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul2"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n00251_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n00251"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul1_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul1"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul3_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul3"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul1_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul1"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul3_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul3"
+        PINNAME CLK;
+PIN
+        XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod1_pins<110>
+        = BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod1"
+        PINNAME CLK;
+PIN XLXI_50/u_data_path/mult/Mmult_A[31]_B[31]_MuLt_1_OUT3_pins<110> = BEL
+        "XLXI_50/u_data_path/mult/Mmult_A[31]_B[31]_MuLt_1_OUT3" PINNAME CLK;
+TIMEGRP sdClkFb_i = BEL "XLXI_46" BEL "XLXI_23/u4/u1/prevCtrlIn_v" BEL
+        "XLXI_23/u4/u0/prevCtrlIn_v" BEL "XLXI_23/u4/u0/UCtrlSync/sync_r_2"
+        BEL "XLXI_23/u4/u0/UCtrlSync/sync_r_1" BEL
+        "XLXI_23/u4/u1/UCtrlSync/sync_r_2" BEL
+        "XLXI_23/u4/u1/UCtrlSync/sync_r_1" BEL "XLXI_23/u5/state_r_FSM_FFd1"
+        BEL "XLXI_23/u5/state_r_FSM_FFd2" BEL "XLXI_23/u5/state_r_FSM_FFd3"
+        BEL "XLXI_23/u5/nopCntr_r_13" BEL "XLXI_23/u5/nopCntr_r_12" BEL
+        "XLXI_23/u5/nopCntr_r_11" BEL "XLXI_23/u5/nopCntr_r_10" BEL
+        "XLXI_23/u5/nopCntr_r_9" BEL "XLXI_23/u5/nopCntr_r_8" BEL
+        "XLXI_23/u5/nopCntr_r_7" BEL "XLXI_23/u5/nopCntr_r_6" BEL
+        "XLXI_23/u5/nopCntr_r_5" BEL "XLXI_23/u5/nopCntr_r_4" BEL
+        "XLXI_23/u5/nopCntr_r_3" BEL "XLXI_23/u5/nopCntr_r_2" BEL
+        "XLXI_23/u5/nopCntr_r_1" BEL "XLXI_23/u5/nopCntr_r_0" BEL
+        "XLXI_23/u5/timer_r_13" BEL "XLXI_23/u5/timer_r_12" BEL
+        "XLXI_23/u5/timer_r_11" BEL "XLXI_23/u5/timer_r_10" BEL
+        "XLXI_23/u5/timer_r_9" BEL "XLXI_23/u5/timer_r_8" BEL
+        "XLXI_23/u5/timer_r_7" BEL "XLXI_23/u5/timer_r_6" BEL
+        "XLXI_23/u5/timer_r_5" BEL "XLXI_23/u5/timer_r_4" BEL
+        "XLXI_23/u5/timer_r_3" BEL "XLXI_23/u5/timer_r_2" BEL
+        "XLXI_23/u5/timer_r_1" BEL "XLXI_23/u5/timer_r_0" BEL
+        "XLXI_23/u5/wrTimer_r_0" BEL "XLXI_23/u5/rfshCntr_r_13" BEL
+        "XLXI_23/u5/rfshCntr_r_12" BEL "XLXI_23/u5/rfshCntr_r_11" BEL
+        "XLXI_23/u5/rfshCntr_r_10" BEL "XLXI_23/u5/rfshCntr_r_9" BEL
+        "XLXI_23/u5/rfshCntr_r_8" BEL "XLXI_23/u5/rfshCntr_r_7" BEL
+        "XLXI_23/u5/rfshCntr_r_6" BEL "XLXI_23/u5/rfshCntr_r_5" BEL
+        "XLXI_23/u5/rfshCntr_r_4" BEL "XLXI_23/u5/rfshCntr_r_3" BEL
+        "XLXI_23/u5/rfshCntr_r_2" BEL "XLXI_23/u5/rfshCntr_r_1" BEL
+        "XLXI_23/u5/rfshCntr_r_0" BEL "XLXI_23/u5/sAddr_r_12" BEL
+        "XLXI_23/u5/sAddr_r_11" BEL "XLXI_23/u5/sAddr_r_10" BEL
+        "XLXI_23/u5/sAddr_r_9" BEL "XLXI_23/u5/sAddr_r_8" BEL
+        "XLXI_23/u5/sAddr_r_7" BEL "XLXI_23/u5/sAddr_r_6" BEL
+        "XLXI_23/u5/sAddr_r_5" BEL "XLXI_23/u5/sAddr_r_4" BEL
+        "XLXI_23/u5/sAddr_r_3" BEL "XLXI_23/u5/sAddr_r_2" BEL
+        "XLXI_23/u5/sAddr_r_1" BEL "XLXI_23/u5/sAddr_r_0" BEL
+        "XLXI_23/u5/sDataDir_r" BEL "XLXI_23/u5/cke_r" BEL
+        "XLXI_23/u5/rdPipeline_r_4" BEL "XLXI_23/u5/rdPipeline_r_3" BEL
+        "XLXI_23/u5/rdPipeline_r_2" BEL "XLXI_23/u5/rdPipeline_r_1" BEL
+        "XLXI_23/u5/rdPipeline_r_0" BEL "XLXI_23/u5/rasTimer_r_1" BEL
+        "XLXI_23/u5/rasTimer_r_0" BEL "XLXI_23/u5/activeFlag_r_0" BEL
+        "XLXI_23/u5/refTimer_r_8" BEL "XLXI_23/u5/refTimer_r_7" BEL
+        "XLXI_23/u5/refTimer_r_6" BEL "XLXI_23/u5/refTimer_r_5" BEL
+        "XLXI_23/u5/refTimer_r_4" BEL "XLXI_23/u5/refTimer_r_3" BEL
+        "XLXI_23/u5/refTimer_r_2" BEL "XLXI_23/u5/refTimer_r_1" BEL
+        "XLXI_23/u5/refTimer_r_0" BEL "XLXI_23/u5/cmd_r_4" BEL
+        "XLXI_23/u5/cmd_r_3" BEL "XLXI_23/u5/cmd_r_2" BEL
+        "XLXI_23/u5/activeRow_r_0_12" BEL "XLXI_23/u5/activeRow_r_0_11" BEL
+        "XLXI_23/u5/activeRow_r_0_10" BEL "XLXI_23/u5/activeRow_r_0_9" BEL
+        "XLXI_23/u5/activeRow_r_0_8" BEL "XLXI_23/u5/activeRow_r_0_7" BEL
+        "XLXI_23/u5/activeRow_r_0_6" BEL "XLXI_23/u5/activeRow_r_0_5" BEL
+        "XLXI_23/u5/activeRow_r_0_4" BEL "XLXI_23/u5/activeRow_r_0_3" BEL
+        "XLXI_23/u5/activeRow_r_0_2" BEL "XLXI_23/u5/activeRow_r_0_1" BEL
+        "XLXI_23/u5/activeRow_r_0_0" BEL "XLXI_23/u2/Rst_proc.resetCnt_v_2"
+        BEL "XLXI_23/u2/Rst_proc.resetCnt_v_1" BEL
+        "XLXI_23/u2/Rst_proc.resetCnt_v_0" BEL
+        "XLXI_23/u2/curr_state_FSM_FFd2" BEL "XLXI_23/u2/curr_state_FSM_FFd3"
+        BEL "XLXI_23/u2/curr_state_FSM_FFd1" BEL "XLXI_23/u2/data_out_s_31"
+        BEL "XLXI_23/u2/data_out_s_30" BEL "XLXI_23/u2/data_out_s_29" BEL
+        "XLXI_23/u2/data_out_s_28" BEL "XLXI_23/u2/data_out_s_27" BEL
+        "XLXI_23/u2/data_out_s_26" BEL "XLXI_23/u2/data_out_s_25" BEL
+        "XLXI_23/u2/data_out_s_24" BEL "XLXI_23/u2/data_out_s_23" BEL
+        "XLXI_23/u2/data_out_s_22" BEL "XLXI_23/u2/data_out_s_21" BEL
+        "XLXI_23/u2/data_out_s_20" BEL "XLXI_23/u2/data_out_s_19" BEL
+        "XLXI_23/u2/data_out_s_18" BEL "XLXI_23/u2/data_out_s_17" BEL
+        "XLXI_23/u2/data_out_s_16" BEL "XLXI_23/u2/data_out_s_15" BEL
+        "XLXI_23/u2/data_out_s_14" BEL "XLXI_23/u2/data_out_s_13" BEL
+        "XLXI_23/u2/data_out_s_12" BEL "XLXI_23/u2/data_out_s_11" BEL
+        "XLXI_23/u2/data_out_s_10" BEL "XLXI_23/u2/data_out_s_9" BEL
+        "XLXI_23/u2/data_out_s_8" BEL "XLXI_23/u2/data_out_s_7" BEL
+        "XLXI_23/u2/data_out_s_6" BEL "XLXI_23/u2/data_out_s_5" BEL
+        "XLXI_23/u2/data_out_s_4" BEL "XLXI_23/u2/data_out_s_3" BEL
+        "XLXI_23/u2/data_out_s_2" BEL "XLXI_23/u2/data_out_s_1" BEL
+        "XLXI_23/u2/data_out_s_0" BEL "XLXI_23/u2/feedback_done_1" BEL
+        "XLXI_23/u2/feedback_done_0" BEL "XLXI_23/u2/prev_state_2" BEL
+        "XLXI_23/u2/prev_state_1" BEL "XLXI_23/u2/prev_state_0" BEL
+        "XLXI_23/u2/in_init_st_s_1" BEL "XLXI_23/u2/in_init_st_s_0" BEL
+        "XLXI_23/u2/step_en_l_s" BEL "XLXI_23/u2/data_in_s_31" BEL
+        "XLXI_23/u2/data_in_s_30" BEL "XLXI_23/u2/data_in_s_29" BEL
+        "XLXI_23/u2/data_in_s_28" BEL "XLXI_23/u2/data_in_s_27" BEL
+        "XLXI_23/u2/data_in_s_26" BEL "XLXI_23/u2/data_in_s_25" BEL
+        "XLXI_23/u2/data_in_s_24" BEL "XLXI_23/u2/data_in_s_23" BEL
+        "XLXI_23/u2/data_in_s_22" BEL "XLXI_23/u2/data_in_s_21" BEL
+        "XLXI_23/u2/data_in_s_20" BEL "XLXI_23/u2/data_in_s_19" BEL
+        "XLXI_23/u2/data_in_s_18" BEL "XLXI_23/u2/data_in_s_17" BEL
+        "XLXI_23/u2/data_in_s_16" BEL "XLXI_23/u2/data_in_s_15" BEL
+        "XLXI_23/u2/data_in_s_14" BEL "XLXI_23/u2/data_in_s_13" BEL
+        "XLXI_23/u2/data_in_s_12" BEL "XLXI_23/u2/data_in_s_11" BEL
+        "XLXI_23/u2/data_in_s_10" BEL "XLXI_23/u2/data_in_s_9" BEL
+        "XLXI_23/u2/data_in_s_8" BEL "XLXI_23/u2/data_in_s_7" BEL
+        "XLXI_23/u2/data_in_s_6" BEL "XLXI_23/u2/data_in_s_5" BEL
+        "XLXI_23/u2/data_in_s_4" BEL "XLXI_23/u2/data_in_s_3" BEL
+        "XLXI_23/u2/data_in_s_2" BEL "XLXI_23/u2/data_in_s_1" BEL
+        "XLXI_23/u2/data_in_s_0" BEL "XLXI_23/u2/address_in_s_24" BEL
+        "XLXI_23/u2/address_in_s_20" BEL "XLXI_23/u2/address_in_s_19" BEL
+        "XLXI_23/u2/address_in_s_18" BEL "XLXI_23/u2/address_in_s_17" BEL
+        "XLXI_23/u2/address_in_s_16" BEL "XLXI_23/u2/address_in_s_15" BEL
+        "XLXI_23/u2/address_in_s_14" BEL "XLXI_23/u2/address_in_s_13" BEL
+        "XLXI_23/u2/address_in_s_12" BEL "XLXI_23/u2/address_in_s_11" BEL
+        "XLXI_23/u2/address_in_s_10" BEL "XLXI_23/u2/address_in_s_9" BEL
+        "XLXI_23/u2/address_in_s_8" BEL "XLXI_23/u2/address_in_s_7" BEL
+        "XLXI_23/u2/address_in_s_6" BEL "XLXI_23/u2/address_in_s_5" BEL
+        "XLXI_23/u2/address_in_s_4" BEL "XLXI_23/u2/address_in_s_3" BEL
+        "XLXI_23/u2/address_in_s_2" BEL "XLXI_23/u2/address_in_s_1" BEL
+        "XLXI_23/u2/address_in_s_0" BEL "XLXI_23/u2/reset_s" BEL
+        "XLXI_23/u2/in_init_s" BEL "XLXI_23/u2/step_en_sh_s" BEL
+        "XLXI_23/u2/Ready_clk_i_s" BEL "XLXI_23/u3/curr_state_FSM_FFd2" BEL
+        "XLXI_23/u3/curr_state_FSM_FFd1" BEL "XLXI_23/u3/done_d" BEL
+        "XLXI_23/u3/XSA_done_deasserted" BEL "XLXI_23/u3/int_DO_31" BEL
+        "XLXI_23/u3/int_DO_30" BEL "XLXI_23/u3/int_DO_29" BEL
+        "XLXI_23/u3/int_DO_28" BEL "XLXI_23/u3/int_DO_27" BEL
+        "XLXI_23/u3/int_DO_26" BEL "XLXI_23/u3/int_DO_25" BEL
+        "XLXI_23/u3/int_DO_24" BEL "XLXI_23/u3/int_DO_23" BEL
+        "XLXI_23/u3/int_DO_22" BEL "XLXI_23/u3/int_DO_21" BEL
+        "XLXI_23/u3/int_DO_20" BEL "XLXI_23/u3/int_DO_19" BEL
+        "XLXI_23/u3/int_DO_18" BEL "XLXI_23/u3/int_DO_17" BEL
+        "XLXI_23/u3/int_DO_16" BEL "XLXI_23/u3/int_DO_15" BEL
+        "XLXI_23/u3/int_DO_14" BEL "XLXI_23/u3/int_DO_13" BEL
+        "XLXI_23/u3/int_DO_12" BEL "XLXI_23/u3/int_DO_11" BEL
+        "XLXI_23/u3/int_DO_10" BEL "XLXI_23/u3/int_DO_9" BEL
+        "XLXI_23/u3/int_DO_8" BEL "XLXI_23/u3/int_DO_7" BEL
+        "XLXI_23/u3/int_DO_6" BEL "XLXI_23/u3/int_DO_5" BEL
+        "XLXI_23/u3/int_DO_4" BEL "XLXI_23/u3/int_DO_3" BEL
+        "XLXI_23/u3/int_DO_2" BEL "XLXI_23/u3/int_DO_1" BEL
+        "XLXI_23/u3/int_DO_0" BEL "XLXI_23/u3/as_d" BEL "XLXI_30/slave/x3" BEL
+        "XLXI_30/LA/counter/CNT_S_4" BEL "XLXI_30/LA/counter/CNT_S_3" BEL
+        "XLXI_30/LA/counter/CNT_S_2" BEL "XLXI_30/LA/counter/CNT_S_1" BEL
+        "XLXI_30/LA/counter/CNT_S_0" BEL "XLXI_30/LA/ram/Mram_memory_array32"
+        BEL "XLXI_30/LA/ram/Mram_memory_array31" BEL
+        "XLXI_30/LA/ram/Mram_memory_array30" BEL
+        "XLXI_30/LA/ram/Mram_memory_array29" BEL
+        "XLXI_30/LA/ram/Mram_memory_array28" BEL
+        "XLXI_30/LA/ram/Mram_memory_array27" BEL
+        "XLXI_30/LA/ram/Mram_memory_array26" BEL
+        "XLXI_30/LA/ram/Mram_memory_array25" BEL
+        "XLXI_30/LA/ram/Mram_memory_array24" BEL
+        "XLXI_30/LA/ram/Mram_memory_array23" BEL
+        "XLXI_30/LA/ram/Mram_memory_array22" BEL
+        "XLXI_30/LA/ram/Mram_memory_array21" BEL
+        "XLXI_30/LA/ram/Mram_memory_array20" BEL
+        "XLXI_30/LA/ram/Mram_memory_array19" BEL
+        "XLXI_30/LA/ram/Mram_memory_array17" BEL
+        "XLXI_30/LA/ram/Mram_memory_array16" BEL
+        "XLXI_30/LA/ram/Mram_memory_array18" BEL
+        "XLXI_30/LA/ram/Mram_memory_array15" BEL
+        "XLXI_30/LA/ram/Mram_memory_array14" BEL
+        "XLXI_30/LA/ram/Mram_memory_array13" BEL
+        "XLXI_30/LA/ram/Mram_memory_array12" BEL
+        "XLXI_30/LA/ram/Mram_memory_array11" BEL
+        "XLXI_30/LA/ram/Mram_memory_array10" BEL
+        "XLXI_30/LA/ram/Mram_memory_array8" BEL
+        "XLXI_30/LA/ram/Mram_memory_array9" BEL
+        "XLXI_30/LA/ram/Mram_memory_array6" BEL
+        "XLXI_30/LA/ram/Mram_memory_array5" BEL
+        "XLXI_30/LA/ram/Mram_memory_array4" BEL
+        "XLXI_30/LA/ram/Mram_memory_array3" BEL
+        "XLXI_30/LA/ram/Mram_memory_array2" BEL
+        "XLXI_30/LA/ram/Mram_memory_array1" BEL "XLXI_30/LA/status_reg_4" BEL
+        "XLXI_30/LA/status_reg_3" BEL "XLXI_30/LA/status_reg_2" BEL
+        "XLXI_30/LA/status_reg_1" BEL "XLXI_30/LA/status_reg_0" BEL
+        "XLXI_30/LA/run_flag" BEL "XLXI_30/LA/sts_ce_reg" BEL
+        "XLXI_30/LA/in_int_reg" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_31" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_30" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_29" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_28" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_27" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_26" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_25" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_24" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_23" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_22" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_21" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_20" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_19" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_18" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_17" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_16" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_15" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_14" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_13" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_12" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_11" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_10" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_9" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_8" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_7" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_6" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_5" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_4" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_3" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_2" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_1" BEL
+        "XLXI_50/u_data_path/ir_env_inst/IR_ENV/REG_0" BEL
+        "XLXI_50/u_data_path/MDR/REG_31" BEL "XLXI_50/u_data_path/MDR/REG_30"
+        BEL "XLXI_50/u_data_path/MDR/REG_29" BEL
+        "XLXI_50/u_data_path/MDR/REG_28" BEL "XLXI_50/u_data_path/MDR/REG_27"
+        BEL "XLXI_50/u_data_path/MDR/REG_26" BEL
+        "XLXI_50/u_data_path/MDR/REG_25" BEL "XLXI_50/u_data_path/MDR/REG_24"
+        BEL "XLXI_50/u_data_path/MDR/REG_23" BEL
+        "XLXI_50/u_data_path/MDR/REG_22" BEL "XLXI_50/u_data_path/MDR/REG_21"
+        BEL "XLXI_50/u_data_path/MDR/REG_20" BEL
+        "XLXI_50/u_data_path/MDR/REG_19" BEL "XLXI_50/u_data_path/MDR/REG_18"
+        BEL "XLXI_50/u_data_path/MDR/REG_17" BEL
+        "XLXI_50/u_data_path/MDR/REG_16" BEL "XLXI_50/u_data_path/MDR/REG_15"
+        BEL "XLXI_50/u_data_path/MDR/REG_14" BEL
+        "XLXI_50/u_data_path/MDR/REG_13" BEL "XLXI_50/u_data_path/MDR/REG_12"
+        BEL "XLXI_50/u_data_path/MDR/REG_11" BEL
+        "XLXI_50/u_data_path/MDR/REG_10" BEL "XLXI_50/u_data_path/MDR/REG_9"
+        BEL "XLXI_50/u_data_path/MDR/REG_8" BEL
+        "XLXI_50/u_data_path/MDR/REG_7" BEL "XLXI_50/u_data_path/MDR/REG_6"
+        BEL "XLXI_50/u_data_path/MDR/REG_5" BEL
+        "XLXI_50/u_data_path/MDR/REG_4" BEL "XLXI_50/u_data_path/MDR/REG_3"
+        BEL "XLXI_50/u_data_path/MDR/REG_2" BEL
+        "XLXI_50/u_data_path/MDR/REG_1" BEL "XLXI_50/u_data_path/MDR/REG_0"
+        BEL "XLXI_50/u_data_path/MAR/REG_23" BEL
+        "XLXI_50/u_data_path/MAR/REG_22" BEL "XLXI_50/u_data_path/MAR/REG_21"
+        BEL "XLXI_50/u_data_path/MAR/REG_20" BEL
+        "XLXI_50/u_data_path/MAR/REG_19" BEL "XLXI_50/u_data_path/MAR/REG_18"
+        BEL "XLXI_50/u_data_path/MAR/REG_17" BEL
+        "XLXI_50/u_data_path/MAR/REG_16" BEL "XLXI_50/u_data_path/MAR/REG_15"
+        BEL "XLXI_50/u_data_path/MAR/REG_14" BEL
+        "XLXI_50/u_data_path/MAR/REG_13" BEL "XLXI_50/u_data_path/MAR/REG_12"
+        BEL "XLXI_50/u_data_path/MAR/REG_11" BEL
+        "XLXI_50/u_data_path/MAR/REG_10" BEL "XLXI_50/u_data_path/MAR/REG_9"
+        BEL "XLXI_50/u_data_path/MAR/REG_8" BEL
+        "XLXI_50/u_data_path/MAR/REG_7" BEL "XLXI_50/u_data_path/MAR/REG_6"
+        BEL "XLXI_50/u_data_path/MAR/REG_5" BEL
+        "XLXI_50/u_data_path/MAR/REG_4" BEL "XLXI_50/u_data_path/MAR/REG_3"
+        BEL "XLXI_50/u_data_path/MAR/REG_2" BEL
+        "XLXI_50/u_data_path/MAR/REG_1" BEL "XLXI_50/u_data_path/MAR/REG_0"
+        BEL "XLXI_50/u_data_path/C_REG/REG_31" BEL
+        "XLXI_50/u_data_path/C_REG/REG_30" BEL
+        "XLXI_50/u_data_path/C_REG/REG_29" BEL
+        "XLXI_50/u_data_path/C_REG/REG_28" BEL
+        "XLXI_50/u_data_path/C_REG/REG_27" BEL
+        "XLXI_50/u_data_path/C_REG/REG_26" BEL
+        "XLXI_50/u_data_path/C_REG/REG_25" BEL
+        "XLXI_50/u_data_path/C_REG/REG_24" BEL
+        "XLXI_50/u_data_path/C_REG/REG_23" BEL
+        "XLXI_50/u_data_path/C_REG/REG_22" BEL
+        "XLXI_50/u_data_path/C_REG/REG_21" BEL
+        "XLXI_50/u_data_path/C_REG/REG_20" BEL
+        "XLXI_50/u_data_path/C_REG/REG_19" BEL
+        "XLXI_50/u_data_path/C_REG/REG_18" BEL
+        "XLXI_50/u_data_path/C_REG/REG_17" BEL
+        "XLXI_50/u_data_path/C_REG/REG_16" BEL
+        "XLXI_50/u_data_path/C_REG/REG_15" BEL
+        "XLXI_50/u_data_path/C_REG/REG_14" BEL
+        "XLXI_50/u_data_path/C_REG/REG_13" BEL
+        "XLXI_50/u_data_path/C_REG/REG_12" BEL
+        "XLXI_50/u_data_path/C_REG/REG_11" BEL
+        "XLXI_50/u_data_path/C_REG/REG_10" BEL
+        "XLXI_50/u_data_path/C_REG/REG_9" BEL
+        "XLXI_50/u_data_path/C_REG/REG_8" BEL
+        "XLXI_50/u_data_path/C_REG/REG_7" BEL
+        "XLXI_50/u_data_path/C_REG/REG_6" BEL
+        "XLXI_50/u_data_path/C_REG/REG_5" BEL
+        "XLXI_50/u_data_path/C_REG/REG_4" BEL
+        "XLXI_50/u_data_path/C_REG/REG_3" BEL
+        "XLXI_50/u_data_path/C_REG/REG_2" BEL
+        "XLXI_50/u_data_path/C_REG/REG_1" BEL
+        "XLXI_50/u_data_path/C_REG/REG_0" BEL
+        "XLXI_50/u_data_path/B_REG/REG_31" BEL
+        "XLXI_50/u_data_path/B_REG/REG_30" BEL
+        "XLXI_50/u_data_path/B_REG/REG_29" BEL
+        "XLXI_50/u_data_path/B_REG/REG_28" BEL
+        "XLXI_50/u_data_path/B_REG/REG_27" BEL
+        "XLXI_50/u_data_path/B_REG/REG_26" BEL
+        "XLXI_50/u_data_path/B_REG/REG_25" BEL
+        "XLXI_50/u_data_path/B_REG/REG_24" BEL
+        "XLXI_50/u_data_path/B_REG/REG_23" BEL
+        "XLXI_50/u_data_path/B_REG/REG_22" BEL
+        "XLXI_50/u_data_path/B_REG/REG_21" BEL
+        "XLXI_50/u_data_path/B_REG/REG_20" BEL
+        "XLXI_50/u_data_path/B_REG/REG_19" BEL
+        "XLXI_50/u_data_path/B_REG/REG_18" BEL
+        "XLXI_50/u_data_path/B_REG/REG_17" BEL
+        "XLXI_50/u_data_path/B_REG/REG_16" BEL
+        "XLXI_50/u_data_path/B_REG/REG_15" BEL
+        "XLXI_50/u_data_path/B_REG/REG_14" BEL
+        "XLXI_50/u_data_path/B_REG/REG_13" BEL
+        "XLXI_50/u_data_path/B_REG/REG_12" BEL
+        "XLXI_50/u_data_path/B_REG/REG_11" BEL
+        "XLXI_50/u_data_path/B_REG/REG_10" BEL
+        "XLXI_50/u_data_path/B_REG/REG_9" BEL
+        "XLXI_50/u_data_path/B_REG/REG_8" BEL
+        "XLXI_50/u_data_path/B_REG/REG_7" BEL
+        "XLXI_50/u_data_path/B_REG/REG_6" BEL
+        "XLXI_50/u_data_path/B_REG/REG_5" BEL
+        "XLXI_50/u_data_path/B_REG/REG_4" BEL
+        "XLXI_50/u_data_path/B_REG/REG_3" BEL
+        "XLXI_50/u_data_path/B_REG/REG_2" BEL
+        "XLXI_50/u_data_path/B_REG/REG_1" BEL
+        "XLXI_50/u_data_path/B_REG/REG_0" BEL
+        "XLXI_50/u_data_path/A_REG/REG_31" BEL
+        "XLXI_50/u_data_path/A_REG/REG_30" BEL
+        "XLXI_50/u_data_path/A_REG/REG_29" BEL
+        "XLXI_50/u_data_path/A_REG/REG_28" BEL
+        "XLXI_50/u_data_path/A_REG/REG_27" BEL
+        "XLXI_50/u_data_path/A_REG/REG_26" BEL
+        "XLXI_50/u_data_path/A_REG/REG_25" BEL
+        "XLXI_50/u_data_path/A_REG/REG_24" BEL
+        "XLXI_50/u_data_path/A_REG/REG_23" BEL
+        "XLXI_50/u_data_path/A_REG/REG_22" BEL
+        "XLXI_50/u_data_path/A_REG/REG_21" BEL
+        "XLXI_50/u_data_path/A_REG/REG_20" BEL
+        "XLXI_50/u_data_path/A_REG/REG_19" BEL
+        "XLXI_50/u_data_path/A_REG/REG_18" BEL
+        "XLXI_50/u_data_path/A_REG/REG_17" BEL
+        "XLXI_50/u_data_path/A_REG/REG_16" BEL
+        "XLXI_50/u_data_path/A_REG/REG_15" BEL
+        "XLXI_50/u_data_path/A_REG/REG_14" BEL
+        "XLXI_50/u_data_path/A_REG/REG_13" BEL
+        "XLXI_50/u_data_path/A_REG/REG_12" BEL
+        "XLXI_50/u_data_path/A_REG/REG_11" BEL
+        "XLXI_50/u_data_path/A_REG/REG_10" BEL
+        "XLXI_50/u_data_path/A_REG/REG_9" BEL
+        "XLXI_50/u_data_path/A_REG/REG_8" BEL
+        "XLXI_50/u_data_path/A_REG/REG_7" BEL
+        "XLXI_50/u_data_path/A_REG/REG_6" BEL
+        "XLXI_50/u_data_path/A_REG/REG_5" BEL
+        "XLXI_50/u_data_path/A_REG/REG_4" BEL
+        "XLXI_50/u_data_path/A_REG/REG_3" BEL
+        "XLXI_50/u_data_path/A_REG/REG_2" BEL
+        "XLXI_50/u_data_path/A_REG/REG_1" BEL
+        "XLXI_50/u_data_path/A_REG/REG_0" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array31" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array30" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array32" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array28" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array27" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array29" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array25" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array24" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array26" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array22" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array21" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array23" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array19" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array18" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array20" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array16" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array15" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array17" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array13" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array12" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array14" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array11" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array10" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array9" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array8" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array6" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array5" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array7" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array3" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array2" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array4" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array32" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array31" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_A_INST/Mram_memory_array1" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array30" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array29" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array28" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array27" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array25" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array24" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array26" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array22" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array21" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array23" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array19" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array18" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array20" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array17" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array16" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array15" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array14" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array12" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array11" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array13" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array9" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array8" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array10" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array6" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array5" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array7" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array3" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array2" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array4" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array32" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array31" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_B_INST/Mram_memory_array1" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array29" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array28" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array30" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array26" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array25" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array27" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array24" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array23" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array22" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array21" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array19" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array18" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array20" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array16" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array15" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array17" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array13" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array12" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array14" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array11" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array10" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array9" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array8" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array6" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array5" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array7" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array3" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array2" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array4" BEL
+        "XLXI_50/u_data_path/gpr_inst/RAM_D_INST/Mram_memory_array1" PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n0025_pins<110>"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/cnt" BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/state_FSM_FFd2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/state_FSM_FFd3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/state_FSM_FFd1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_addr_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/dma_done"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_rd"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_wr"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_10"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_9"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_8"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_7"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_6"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_5"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_4"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_3"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_2"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_1"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/idx_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_pending"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_data_in_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/mem_data_out_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_result_ack"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/engine_valid"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/result_latch_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/data_latch_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/out_reg_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_dma/base_reg_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/state_FSM_FFd2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/state_FSM_FFd3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/state_FSM_FFd1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/state_FSM_FFd4"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul2_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul2_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul_pins<110>"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_out_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/d_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/a_reg_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/b_reg_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/m_reg_0"
+        BEL "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/pass"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_result_valid"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/elem_idx_0"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/engine_req_next"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_31"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_30"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_29"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_28"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_27"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_26"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_25"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_24"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_23"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_22"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_21"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_20"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_19"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_18"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_17"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_16"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_15"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_14"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_13"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_12"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_11"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_10"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_9"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_8"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_7"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_6"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_5"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_4"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_3"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_2"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_1"
+        BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/x_latch_0"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod_pins<110>"
+        BEL "XLXI_50/u_data_path/PC_env/REG_31" BEL
+        "XLXI_50/u_data_path/PC_env/REG_30" BEL
+        "XLXI_50/u_data_path/PC_env/REG_29" BEL
+        "XLXI_50/u_data_path/PC_env/REG_28" BEL
+        "XLXI_50/u_data_path/PC_env/REG_27" BEL
+        "XLXI_50/u_data_path/PC_env/REG_26" BEL
+        "XLXI_50/u_data_path/PC_env/REG_25" BEL
+        "XLXI_50/u_data_path/PC_env/REG_24" BEL
+        "XLXI_50/u_data_path/PC_env/REG_23" BEL
+        "XLXI_50/u_data_path/PC_env/REG_22" BEL
+        "XLXI_50/u_data_path/PC_env/REG_21" BEL
+        "XLXI_50/u_data_path/PC_env/REG_20" BEL
+        "XLXI_50/u_data_path/PC_env/REG_19" BEL
+        "XLXI_50/u_data_path/PC_env/REG_18" BEL
+        "XLXI_50/u_data_path/PC_env/REG_17" BEL
+        "XLXI_50/u_data_path/PC_env/REG_16" BEL
+        "XLXI_50/u_data_path/PC_env/REG_15" BEL
+        "XLXI_50/u_data_path/PC_env/REG_14" BEL
+        "XLXI_50/u_data_path/PC_env/REG_13" BEL
+        "XLXI_50/u_data_path/PC_env/REG_12" BEL
+        "XLXI_50/u_data_path/PC_env/REG_11" BEL
+        "XLXI_50/u_data_path/PC_env/REG_10" BEL
+        "XLXI_50/u_data_path/PC_env/REG_9" BEL
+        "XLXI_50/u_data_path/PC_env/REG_8" BEL
+        "XLXI_50/u_data_path/PC_env/REG_7" BEL
+        "XLXI_50/u_data_path/PC_env/REG_6" BEL
+        "XLXI_50/u_data_path/PC_env/REG_5" BEL
+        "XLXI_50/u_data_path/PC_env/REG_4" BEL
+        "XLXI_50/u_data_path/PC_env/REG_3" BEL
+        "XLXI_50/u_data_path/PC_env/REG_2" BEL
+        "XLXI_50/u_data_path/PC_env/REG_1" BEL
+        "XLXI_50/u_data_path/PC_env/REG_0" BEL
+        "XLXI_50/u_data_path/mult/cnt_1" BEL "XLXI_50/u_data_path/mult/cnt_0"
+        BEL "XLXI_50/u_data_path/mult/prod_r_47" BEL
+        "XLXI_50/u_data_path/mult/prod_r_46" BEL
+        "XLXI_50/u_data_path/mult/prod_r_45" BEL
+        "XLXI_50/u_data_path/mult/prod_r_44" BEL
+        "XLXI_50/u_data_path/mult/prod_r_43" BEL
+        "XLXI_50/u_data_path/mult/prod_r_42" BEL
+        "XLXI_50/u_data_path/mult/prod_r_41" BEL
+        "XLXI_50/u_data_path/mult/prod_r_40" BEL
+        "XLXI_50/u_data_path/mult/prod_r_39" BEL
+        "XLXI_50/u_data_path/mult/prod_r_38" BEL
+        "XLXI_50/u_data_path/mult/prod_r_37" BEL
+        "XLXI_50/u_data_path/mult/prod_r_36" BEL
+        "XLXI_50/u_data_path/mult/prod_r_35" BEL
+        "XLXI_50/u_data_path/mult/prod_r_34" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd3" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd5" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd6" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd4" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd8" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd9" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd7" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd10" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd11" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd12" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd13" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd15" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd16" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd14" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd17" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd18" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd19" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd20" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd22" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd23" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd21" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd24" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd25" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd26" BEL
+        "XLXI_50/u_control/mac/current_state_FSM_FFd1" BEL
+        "XLXI_50/u_control/mac/current_state_FSM_FFd2" BEL
+        "XLXI_23/u4/u1/ctrlOut_o" BEL "XLXI_23/u4/u1/doneOut_o" BEL
+        "XLXI_23/u4/u0/ctrlOut_o" BEL "XLXI_23/u4/u0/doneOut_o" BEL
+        "XLXI_23/u2/done_s" BEL
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/active" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd12_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd21_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd6_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd19_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd18_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd2_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd7_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd6_2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd6_3" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd24_1" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd19_2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd6_4" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd18_2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd2_2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd7_2" BEL
+        "XLXI_50/u_control/ctrl/current_state_FSM_FFd7_3" BEL
+        "sdClkFb_i_BUFGP/BUFG" BEL "XLXI_23/u5/sdramData_r_15" BEL
+        "XLXI_23/u5/sData_r_15" BEL "XLXI_23/u5/sdramData_r_14" BEL
+        "XLXI_23/u5/sData_r_14" BEL "XLXI_23/u5/sdramData_r_13" BEL
+        "XLXI_23/u5/sData_r_13" BEL "XLXI_23/u5/sdramData_r_12" BEL
+        "XLXI_23/u5/sData_r_12" BEL "XLXI_23/u5/sdramData_r_11" BEL
+        "XLXI_23/u5/sData_r_11" BEL "XLXI_23/u5/sdramData_r_10" BEL
+        "XLXI_23/u5/sData_r_10" BEL "XLXI_23/u5/sdramData_r_9" BEL
+        "XLXI_23/u5/sData_r_9" BEL "XLXI_23/u5/sdramData_r_8" BEL
+        "XLXI_23/u5/sData_r_8" BEL "XLXI_23/u5/sdramData_r_7" BEL
+        "XLXI_23/u5/sData_r_7" BEL "XLXI_23/u5/sdramData_r_6" BEL
+        "XLXI_23/u5/sData_r_6" BEL "XLXI_23/u5/sdramData_r_5" BEL
+        "XLXI_23/u5/sData_r_5" BEL "XLXI_23/u5/sdramData_r_4" BEL
+        "XLXI_23/u5/sData_r_4" BEL "XLXI_23/u5/sdramData_r_3" BEL
+        "XLXI_23/u5/sData_r_3" BEL "XLXI_23/u5/sdramData_r_2" BEL
+        "XLXI_23/u5/sData_r_2" BEL "XLXI_23/u5/sdramData_r_1" BEL
+        "XLXI_23/u5/sData_r_1" BEL "XLXI_23/u5/sdramData_r_0" BEL
+        "XLXI_23/u5/sData_r_0" BEL "XLXI_50/u_data_path/mult/Mshreg_prod_r_32"
+        BEL "XLXI_50/u_data_path/mult/prod_r_32" BEL "XLXI_30/slave/Mshreg_x2"
+        BEL "XLXI_30/slave/x2" BEL "XLXI_50/u_data_path/mult/Mshreg_prod_r_33"
+        BEL "XLXI_50/u_data_path/mult/prod_r_33" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_31" BEL
+        "XLXI_50/u_data_path/mult/prod_r_31" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_30" BEL
+        "XLXI_50/u_data_path/mult/prod_r_30" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_27" BEL
+        "XLXI_50/u_data_path/mult/prod_r_27" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_29" BEL
+        "XLXI_50/u_data_path/mult/prod_r_29" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_28" BEL
+        "XLXI_50/u_data_path/mult/prod_r_28" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_26" BEL
+        "XLXI_50/u_data_path/mult/prod_r_26" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_25" BEL
+        "XLXI_50/u_data_path/mult/prod_r_25" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_22" BEL
+        "XLXI_50/u_data_path/mult/prod_r_22" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_24" BEL
+        "XLXI_50/u_data_path/mult/prod_r_24" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_23" BEL
+        "XLXI_50/u_data_path/mult/prod_r_23" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_21" BEL
+        "XLXI_50/u_data_path/mult/prod_r_21" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_20" BEL
+        "XLXI_50/u_data_path/mult/prod_r_20" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_19" BEL
+        "XLXI_50/u_data_path/mult/prod_r_19" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_18" BEL
+        "XLXI_50/u_data_path/mult/prod_r_18" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_17" BEL
+        "XLXI_50/u_data_path/mult/prod_r_17" BEL
+        "XLXI_50/u_data_path/mult/Mshreg_prod_r_16" BEL
+        "XLXI_50/u_data_path/mult/prod_r_16" PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_sigmoid/Mmult_n00251_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul1_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p1_mul3_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul1_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/Mmult_p2_mul3_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/activation_engine_inst/u_softmax/u_fsm/u_recip/Mmult_prod1_pins<110>"
+        PIN
+        "XLXI_50/u_data_path/mult/Mmult_A[31]_B[31]_MuLt_1_OUT3_pins<110>";
+PIN XLXI_23/u0/u1/u1_pins<1> = BEL "XLXI_23/u0/u1/u1" PINNAME CK0;
+TIMEGRP XLXI_23_u0_genClkP_s = BEL "XLXI_23/u0/genClkP_s_BUFG" PIN
+        "XLXI_23/u0/u1/u1_pins<1>";
+PIN XLXI_23/u0/u1/u1_pins<2> = BEL "XLXI_23/u0/u1/u1" PINNAME CK1;
+TIMEGRP XLXI_23_u0_genClkN_s = BEL "XLXI_23/u0/genClkN_s_BUFG" PIN
+        "XLXI_23/u0/u1/u1_pins<2>";
+PIN SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0> = BEL "SP6_BUFIO_INSERT_ML_BUFIO2_0"
+        PINNAME DIVCLK;
+PIN XLXI_23/u0/u0_pins<3> = BEL "XLXI_23/u0/u0" PINNAME CLKIN;
+TIMEGRP fpgaClk_i = PIN "SP6_BUFIO_INSERT_ML_BUFIO2_0_pins<0>" PIN
+        "XLXI_23/u0/u0_pins<3>";
+TS_fpgaClk_i = PERIOD TIMEGRP "fpgaClk_i" 12 MHz HIGH 50%;
+TS_sdClkFb_i = PERIOD TIMEGRP "sdClkFb_i" 40 MHz HIGH 50%;
+TS_XLXI_23_u0_genClkN_s = PERIOD TIMEGRP "XLXI_23_u0_genClkN_s" TS_fpgaClk_i *
+        5 PHASE 8.33333333 ns HIGH 50%;
+TS_XLXI_23_u0_genClkP_s = PERIOD TIMEGRP "XLXI_23_u0_genClkP_s" TS_fpgaClk_i *
+        5 HIGH 50%;
+SCHEMATIC END;
+

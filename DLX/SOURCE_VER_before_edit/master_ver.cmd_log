@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym master_ver E:/VERILOG_2024/SOURCE_VER/master_ver.sch E:/VERILOG_2024/SOURCE_VER/master_ver.sym 

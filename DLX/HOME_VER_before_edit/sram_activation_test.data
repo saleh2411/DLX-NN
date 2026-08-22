@@ -1,0 +1,150 @@
+// ============================================================================
+//        DLX ACTIVATION ENGINE FULL TEST - sram_activation_test.data
+// ============================================================================
+// Tests: Sigmoid, Tanh, GELU (all via S_SIGMOID state), ReLU (S_RELU state)
+// No softmax.
+//
+// Inputs (Q16.16, loaded from 0x49-0x4C):
+//   R1 =  2.0  = 0x00020000
+//   R2 = -2.0  = 0xFFFE0000
+//   R3 =  0.0  = 0x00000000
+//   R4 =  5.0  = 0x00050000
+//
+// PASS MARKERS (written to 0x38-0x3B after each section):
+//   0x38 = 0x11111111  (after sigmoid)
+//   0x39 = 0x22222222  (after tanh)
+//   0x3A = 0x33333333  (after gelu)
+//   0x3B = 0x600D600D  (after relu  -- GOOD GOOD!)
+//
+// Results (Q16.16):
+//   Sigmoid:
+//     0x3C = sigmoid(+2.0) --> exp 0x0000E000  (0.875)
+//     0x3D = sigmoid( 0.0) --> exp 0x00008000  (0.500)
+//     0x3E = sigmoid(-2.0) --> exp 0x00002000  (0.125)
+//     0x3F = sigmoid(+5.0) --> exp 0x00010000  (1.000)
+//   Tanh:
+//     0x40 = tanh(+2.0) --> ~0.964  (pwl approx)
+//     0x41 = tanh( 0.0) --> 0x00000000
+//     0x42 = tanh(-2.0) --> ~-0.964 (negative)
+//   GELU:
+//     0x43 = gelu(+2.0) --> ~1.954  (x*sigmoid(1.702x))
+//     0x44 = gelu( 0.0) --> 0x00000000
+//     0x45 = gelu(-2.0) --> ~-0.046 (negative)
+//   ReLU:
+//     0x46 = relu(+2.0) --> 0x00020000
+//     0x47 = relu( 0.0) --> 0x00000000
+//     0x48 = relu(-2.0) --> 0x00000000
+// ============================================================================
+
+// ============================================================================
+//                         CODE SECTION (starts at 0x00)
+// ============================================================================
+
+// ------ Load test inputs ------
+8C010049 // 0x00: lw R1, R0, 0x49  ; R1 =  2.0
+8C02004A // 0x01: lw R2, R0, 0x4A  ; R2 = -2.0
+8C03004B // 0x02: lw R3, R0, 0x4B  ; R3 =  0.0
+8C04004C // 0x03: lw R4, R0, 0x4C  ; R4 =  5.0
+
+// ------ SECTION 1: Sigmoid  (opcode 111000) ------
+E02A0000 // 0x04: sigmoid R1 -> R10  ; sigmoid(+2.0)  exp: 0x0000E000
+E06B0000 // 0x05: sigmoid R3 -> R11  ; sigmoid( 0.0)  exp: 0x00008000
+E04C0000 // 0x06: sigmoid R2 -> R12  ; sigmoid(-2.0)  exp: 0x00002000
+E08D0000 // 0x07: sigmoid R4 -> R13  ; sigmoid(+5.0)  exp: 0x00010000
+AC0A003C // 0x08: sw R10, R0, 0x3C
+AC0B003D // 0x09: sw R11, R0, 0x3D
+AC0C003E // 0x0A: sw R12, R0, 0x3E
+AC0D003F // 0x0B: sw R13, R0, 0x3F
+8C1D004D // 0x0C: lw R29, R0, 0x4D  ; R29 = 0x11111111
+AC1D0038 // 0x0D: sw R29, R0, 0x38  ; M[mark1] = 0x11111111
+
+// ------ SECTION 2: Tanh  (opcode 111001) ------
+E42A0000 // 0x0E: tanh R1 -> R10   ; tanh(+2.0)
+E46B0000 // 0x0F: tanh R3 -> R11   ; tanh( 0.0)  exp: 0x00000000
+E44C0000 // 0x10: tanh R2 -> R12   ; tanh(-2.0)
+AC0A0040 // 0x11: sw R10, R0, 0x40
+AC0B0041 // 0x12: sw R11, R0, 0x41
+AC0C0042 // 0x13: sw R12, R0, 0x42
+8C1D004E // 0x14: lw R29, R0, 0x4E  ; R29 = 0x22222222
+AC1D0039 // 0x15: sw R29, R0, 0x39  ; M[mark2] = 0x22222222
+
+// ------ SECTION 3: GELU  (opcode 111010) ------
+E82A0000 // 0x16: gelu R1 -> R10   ; gelu(+2.0)
+E86B0000 // 0x17: gelu R3 -> R11   ; gelu( 0.0)  exp: 0x00000000
+E84C0000 // 0x18: gelu R2 -> R12   ; gelu(-2.0)
+AC0A0043 // 0x19: sw R10, R0, 0x43
+AC0B0044 // 0x1A: sw R11, R0, 0x44
+AC0C0045 // 0x1B: sw R12, R0, 0x45
+8C1D004F // 0x1C: lw R29, R0, 0x4F  ; R29 = 0x33333333
+AC1D003A // 0x1D: sw R29, R0, 0x3A  ; M[mark3] = 0x33333333
+
+// ------ SECTION 4: ReLU  (opcode 111100) ------
+F02A0000 // 0x1E: relu R1 -> R10   ; relu(+2.0)  exp: 0x00020000
+F06B0000 // 0x1F: relu R3 -> R11   ; relu( 0.0)  exp: 0x00000000
+F04C0000 // 0x20: relu R2 -> R12   ; relu(-2.0)  exp: 0x00000000
+AC0A0046 // 0x21: sw R10, R0, 0x46
+AC0B0047 // 0x22: sw R11, R0, 0x47
+AC0C0048 // 0x23: sw R12, R0, 0x48
+8C1D0050 // 0x24: lw R29, R0, 0x50  ; R29 = 0x600D600D
+AC1D003B // 0x25: sw R29, R0, 0x3B  ; M[mark4] = 0x600D600D
+
+// ------ Done ------
+FC000000 // 0x26: halt
+
+// ============================================================================
+//                         PADDING (0x27 - 0x37)
+// ============================================================================
+00000000 // 0x27
+00000000 // 0x28
+00000000 // 0x29
+00000000 // 0x2A
+00000000 // 0x2B
+00000000 // 0x2C
+00000000 // 0x2D
+00000000 // 0x2E
+00000000 // 0x2F
+00000000 // 0x30
+00000000 // 0x31
+00000000 // 0x32
+00000000 // 0x33
+00000000 // 0x34
+00000000 // 0x35
+00000000 // 0x36
+00000000 // 0x37
+
+// ============================================================================
+//                         DATA SECTION (starts at 0x38)
+// ============================================================================
+
+// ------ Pass markers (written by code above) ------
+00000000 // 0x38: mark1 --> should become 0x11111111 (after sigmoid)
+00000000 // 0x39: mark2 --> should become 0x22222222 (after tanh)
+00000000 // 0x3A: mark3 --> should become 0x33333333 (after gelu)
+00000000 // 0x3B: mark4 --> should become 0x600D600D (after relu)
+
+// ------ Result storage ------
+00000000 // 0x3C: res_sig_pos2  sigmoid(+2.0) --> exp 0x0000E000
+00000000 // 0x3D: res_sig_zero  sigmoid( 0.0) --> exp 0x00008000
+00000000 // 0x3E: res_sig_neg2  sigmoid(-2.0) --> exp 0x00002000
+00000000 // 0x3F: res_sig_sat   sigmoid(+5.0) --> exp 0x00010000
+00000000 // 0x40: res_tanh_pos2 tanh(+2.0)
+00000000 // 0x41: res_tanh_zero tanh( 0.0)    --> exp 0x00000000
+00000000 // 0x42: res_tanh_neg2 tanh(-2.0)
+00000000 // 0x43: res_gelu_pos2 gelu(+2.0)
+00000000 // 0x44: res_gelu_zero gelu( 0.0)    --> exp 0x00000000
+00000000 // 0x45: res_gelu_neg2 gelu(-2.0)
+00000000 // 0x46: res_relu_pos2 relu(+2.0)    --> exp 0x00020000
+00000000 // 0x47: res_relu_zero relu( 0.0)    --> exp 0x00000000
+00000000 // 0x48: res_relu_neg2 relu(-2.0)    --> exp 0x00000000
+
+// ------ Input constants (Q16.16) ------
+00020000 // 0x49: val_pos2  dc  2.0
+FFFE0000 // 0x4A: val_neg2  dc -2.0
+00000000 // 0x4B: val_zero  dc  0.0
+00050000 // 0x4C: val_pos5  dc  5.0
+
+// ------ Pass marker constants ------
+11111111 // 0x4D: mrk1val  dc 0x11111111
+22222222 // 0x4E: mrk2val  dc 0x22222222
+33333333 // 0x4F: mrk3val  dc 0x33333333
+600D600D // 0x50: mrk4val  dc 0x600D600D  (GOOD GOOD)

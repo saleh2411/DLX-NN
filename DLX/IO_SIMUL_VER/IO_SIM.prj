@@ -1,0 +1,2 @@
+verilog work "REG_sram.v"
+verilog work "IO_SIM.v"

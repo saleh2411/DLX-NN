@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/salve_top.v -lang verilog -prj SOURCE_VER -o salve_top.spl -module salve_top -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 salve_top.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/salve_top.sym 

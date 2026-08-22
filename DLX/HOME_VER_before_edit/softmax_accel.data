@@ -1,0 +1,57 @@
+// ============================================================================
+//          SOFTMAX ACCELERATOR PROGRAM - softmax_accel.data
+// ============================================================================
+// Flat $readmemh image (same convention as sram_softmax_test.data):
+//   one 32-bit word per line, bare hex (no 0x prefix), consecutive addresses
+//   starting at 0x00, // comments allowed. No block headers.
+//
+// SOFTMAX encoding (R-type):
+//   [31:26]=111101  [25:21]=rs1  [20:16]=rs2  [15:11]=0  [10:0]=vec_len
+//   softmax R2, R1, len=4  ->  F4220004
+//
+// !! STRIDE: softmax_dma is WORD-addressed (addr = base + idx) since commit
+//    3d8f1f4, matching normal lw/sw addressing. Vector elements are therefore
+//    CONSECUTIVE words - no gap padding, unlike the stride-4 layout in
+//    sram_softmax_test.data.
+//
+// Input vector (Q16.16):  x = [1.0, 2.0, 3.0, 4.0]
+// Expected outputs (py/Softmax/softmax_golden.py -x 1 2 3 4):
+//   0x0C = 00000736   y0 ~ 0.0282
+//   0x0D = 00001716   y1 ~ 0.0902
+//   0x0E = 000039B7   y2 ~ 0.2254
+//   0x0F = 0000B8B0   y3 ~ 0.7214
+// ============================================================================
+
+// ============================================================================
+//                         CODE SECTION (starts at 0x00)
+// ============================================================================
+2C010004 // 0x00: addi R1, R0, 0x04    ; R1 = address of main
+583F6C65 // 0x01: jr R1                ; jump to main
+C3FF003A // 0x02: special-nop
+C3FF3A6E // 0x03: special-nop
+2C010008 // 0x04: main: addi R1, R0, 0x08 ; R1 = &invec
+2C02000C // 0x05: addi R2, R0, 0x0C    ; R2 = &outvec
+F4220004 // 0x06: softmax R2, R1, 4    ; M[0x0C..0x0F] = softmax(M[0x08..0x0B])
+FFFF2054 // 0x07: halt
+
+// ============================================================================
+//                         DATA SECTION
+// ============================================================================
+
+// ------ INPUT VECTOR (stride 1 - consecutive words) ------
+00010000 // 0x08: x0 = 1.0
+00020000 // 0x09: x1 = 2.0
+00030000 // 0x0A: x2 = 3.0
+00040000 // 0x0B: x3 = 4.0
+
+// ------ OUTPUT VECTOR (stride 1) - prefilled, DMA must overwrite ------
+CAFEBABE // 0x0C: y0 --> exp 00000736 (~0.0282)
+CAFEBABE // 0x0D: y1 --> exp 00001716 (~0.0902)
+CAFEBABE // 0x0E: y2 --> exp 000039B7 (~0.2254)
+CAFEBABE // 0x0F: y3 --> exp 0000B8B0 (~0.7214)
+
+// ------ Guard region - DMA must never touch these ------
+DEADBEEF // 0x10: sentinel - must survive
+DEADBEEF // 0x11: sentinel
+DEADBEEF // 0x12: sentinel
+DEADBEEF // 0x13: sentinel

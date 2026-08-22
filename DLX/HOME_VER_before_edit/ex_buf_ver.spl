@@ -1,0 +1,9 @@
+[Inputs]
+buf_en
+=buf_in[15:0]=
+[Outputs]
+[BiDir]
+=buf_out[15:0]=
+[ATTRIBUTES]
+VeriModel ex_buf_ver
+

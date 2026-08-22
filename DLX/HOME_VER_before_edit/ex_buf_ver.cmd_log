@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/adlx/EXAMPLES_25b/HOME_VER/ex_buf_ver.v -lang verilog -prj HOME_VER -o ex_buf_ver.spl -module ex_buf_ver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 ex_buf_ver.spl E:/adlx/EXAMPLES_25b/HOME_VER/ex_buf_ver.sym 

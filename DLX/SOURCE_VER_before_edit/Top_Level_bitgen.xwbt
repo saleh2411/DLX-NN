@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\administrator.CLS-210-PC\Desktop\saed\saleh\Week7\SOURCE_VER_before_edit\Top_Level.ncd
+OUTFILE=C:\Users\administrator.CLS-210-PC\Desktop\saed\saleh\Week7\SOURCE_VER_before_edit\Top_Level.bit
+FAMILY=Spartan6
+PART=xc6slx25-2ftg256
+WORKINGDIR=C:\Users\administrator.CLS-210-PC\Desktop\saed\saleh\Week7\SOURCE_VER_before_edit
+LICENSE=WebPack
+USER_INFO=210840218_0_0_270

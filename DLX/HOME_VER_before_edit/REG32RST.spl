@@ -1,0 +1,11 @@
+[Inputs]
+CLK
+CE
+RST
+=DI[31:0]=
+[Outputs]
+=DO[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel REG32RST
+

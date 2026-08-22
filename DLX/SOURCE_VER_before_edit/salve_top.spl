@@ -1,0 +1,17 @@
+[Inputs]
+clk
+card_sel
+wr_in_n
+=AI[9:0]=
+=A[31:0]=
+=B[31:0]=
+=C[31:0]=
+=D[31:0]=
+[Outputs]
+sack_n
+=SDO[31:0]=
+=Reg_addr[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel salve_top
+

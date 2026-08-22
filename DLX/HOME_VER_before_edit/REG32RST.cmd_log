@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/RE32RST.v -lang verilog -prj HOME_VER -o REG32RST.spl -module REG32RST -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 REG32RST.spl E:/VERILOG_2024/HOME_VER/REG32RST.sym 

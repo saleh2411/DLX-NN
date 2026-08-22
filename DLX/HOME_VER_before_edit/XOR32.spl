@@ -1,0 +1,9 @@
+[Inputs]
+=A[31:0]=
+=B[31:0]=
+[Outputs]
+=O[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel XOR32
+

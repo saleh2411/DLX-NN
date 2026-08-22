@@ -1,0 +1,6 @@
+verilog work "ex_reg_ver.v"
+verilog work "ex_mux_ver.v"
+verilog work "ex_buf_ver.v"
+vhdl work "ex_top_sch.vhf"
+verilog work "ex_top_tb_ver.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

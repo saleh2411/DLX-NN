@@ -1,0 +1,180 @@
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_4/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+sch2sym -intstyle ise -family spartan6 -refsym Top_Level E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.sch E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.sym 
+xst -intstyle ise -ifn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/WEEK_5/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "E:/adlx/B1/Week7/SOURCE_VER/Top_Level.xst" -ofn "E:/adlx/B1/Week7/SOURCE_VER/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+xst -intstyle ise -ifn "C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/Top_Level.xst" -ofn "C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/Top_Level.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd  
+map -intstyle ise -p xc6slx25-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Top_Level_map.ncd Top_Level.ngd Top_Level.pcf 
+par -w -intstyle ise -ol high -mt off Top_Level_map.ncd Top_Level.ncd Top_Level.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Top_Level.twx Top_Level.ncd -o Top_Level.twr Top_Level.pcf -ucf SOURCE.ucf 
+bitgen -intstyle ise -f Top_Level.ut Top_Level.ncd 

@@ -1,0 +1,8 @@
+[Inputs]
+=I[5:0]=
+[Outputs]
+=O[5:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel BUF6
+

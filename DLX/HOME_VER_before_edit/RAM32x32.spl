@@ -1,0 +1,11 @@
+[Inputs]
+CLK
+WE
+=ADDR[4:0]=
+=DI[31:0]=
+[Outputs]
+=DO[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel RAM32x32
+

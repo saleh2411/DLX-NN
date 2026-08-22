@@ -1,0 +1,10 @@
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.v -lang verilog -prj SOURCE_VER -o id_module.spl -module id_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 id_module.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.sym 
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.v -lang verilog -prj SOURCE_VER -o id_module.spl -module id_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 id_module.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.sym 
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.v -lang verilog -prj SOURCE_VER -o id_module.spl -module id_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 id_module.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.sym 
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.v -lang verilog -prj SOURCE_VER -o id_module.spl -module id_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 id_module.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.sym 
+vhdtdtfi -lib work E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.v -lang verilog -prj SOURCE_VER -o id_module.spl -module id_module -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 id_module.spl E:/adlx/B1/WEEK_3/New_source/SOURCE_VER/id_module.sym 

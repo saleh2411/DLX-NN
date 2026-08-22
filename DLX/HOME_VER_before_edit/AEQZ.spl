@@ -1,0 +1,8 @@
+[Inputs]
+=DI[31:0]=
+[Outputs]
+A_eqz
+[BiDir]
+[ATTRIBUTES]
+VeriModel AEQZ
+

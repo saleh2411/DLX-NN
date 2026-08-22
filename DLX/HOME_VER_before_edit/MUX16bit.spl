@@ -1,0 +1,10 @@
+[Inputs]
+sel
+=A[15:0]=
+=B[15:0]=
+[Outputs]
+=O[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX16bit
+

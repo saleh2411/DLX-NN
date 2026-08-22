@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="HOME_VER" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DLX E:|adlx|B1|Week7|HOME_VER|DLX.sch/XLXI_1 - control</ClosedNode>
+         <ClosedNode>/GPR E:|adlx|B1|Week7|HOME_VER|GPR.v</ClosedNode>
+         <ClosedNode>/IO E:|adlx|B1|Week7|HOME_VER|IO.v</ClosedNode>
+         <ClosedNode>/IO E:|adlx|B1|Week7|HOME_VER|IO.v/dlx - DLX/u_control - control</ClosedNode>
+         <ClosedNode>/IO E:|adlx|B1|Week7|HOME_VER|IO.v/dlx - DLX/u_data_path - data_path/alu_inst - ALU</ClosedNode>
+         <ClosedNode>/IO E:|adlx|B1|Week7|HOME_VER|IO.v/dlx - DLX/u_data_path - data_path/gpr_inst - GPR</ClosedNode>
+         <ClosedNode>/IO E:|adlx|B1|Week7|HOME_VER|IO.v/io_sim - IO_SIM</ClosedNode>
+         <ClosedNode>/IO_SIM_TEST E:|adlx|B1|Week7|HOME_VER|IO_SIM_TEST.v</ClosedNode>
+         <ClosedNode>/RAM32x32 E:|VERILOG_2024|HOME_VER|RAM32x32.v</ClosedNode>
+         <ClosedNode>/control E:|adlx|B1|Week7|HOME_VER|control.v</ClosedNode>
+         <ClosedNode>/data_path E:|adlx|B1|Week7|HOME_VER|data_path.v</ClosedNode>
+         <ClosedNode>/data_path E:|adlx|B1|Week7|HOME_VER|data_path.v/gpr_inst - GPR</ClosedNode>
+         <ClosedNode>/ex_top_sch E:|adlx|EXAMPLES|HOME_VER|ex_top_sch.sch</ClosedNode>
+         <ClosedNode>/ex_top_sch_ex_top_sch_sch_tb E:|adlx|EXAMPLES|HOME_VER|ex_top_tb_ver.v/UUT - ex_top_sch</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>IO (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/HOME_VER_before_edit/IO.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000039d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000039d0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>IO (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/HOME_VER_before_edit/IO.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000ef00000001000000000000006a0000000100000000000000660000000100000000000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>C:\Users\administrator.CLS-210-PC\Desktop\saed\saleh\Week7\HOME_VER_before_edit\ActivationEngine.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000002660000008401000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ba000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ba0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/IO_SIM_TEST E:|adlx|B1|Week7|HOME_VER_before_edit|IO_SIM_TEST.v</ClosedNode>
+         <ClosedNode>/IO_SIM_TEST E:|adlx|B1|Week7|HOME_VER|IO_SIM_TEST.v</ClosedNode>
+         <ClosedNode>/IO_TANH_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|saleh|Week7|HOME_VER_before_edit|IO_TANH_TB.v</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|saleh|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/activation_engine_inst - ActivationEngine/u_sigmoid - sigmoid_subenv</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/activation_engine_inst - ActivationEngine/u_softmax - softmax_subenv</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/alu_inst - ALU</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/gpr_inst - GPR</ClosedNode>
+         <ClosedNode>/IO_TB C:|Users|administrator.CLS-210-PC|Desktop|saed|simple_DLX|Week7|HOME_VER_before_edit|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/ir_env_inst - IR_ENV</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER_before_edit|IO_TB.v</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX/u_control - control</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/alu_inst - ALU</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/gpr_inst - GPR</ClosedNode>
+         <ClosedNode>/IO_TB E:|adlx|B1|Week7|HOME_VER|IO_TB.v/uut - IO/dlx - DLX/u_data_path - data_path/ir_env_inst - IR_ENV</ClosedNode>
+         <ClosedNode>/control_tb E:|adlx|B1|Week7|HOME_VER_before_edit|control_tb.v</ClosedNode>
+         <ClosedNode>/control_tb E:|adlx|B1|Week7|HOME_VER|control_tb.v</ClosedNode>
+         <ClosedNode>/ex_top_sch E:|adlx|EXAMPLES|HOME_VER|ex_top_sch.sch</ClosedNode>
+         <ClosedNode>/ex_top_sch_ex_top_sch_sch_tb E:|adlx|EXAMPLES|HOME_VER|ex_top_tb_ver.v/UUT - ex_top_sch</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>IO_TB (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/HOME_VER_before_edit/IO_TB.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000333000000020000000000000000000000000200000064ffffffff000000810000000300000002000003330000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>IO_TB (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/HOME_VER_before_edit/IO_TB.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>ISim Simulator</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ba000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ba0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000279000000010000000100000000000000000000000064ffffffff000000810000000000000001000002790000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

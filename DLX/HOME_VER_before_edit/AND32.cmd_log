@@ -1,0 +1,4 @@
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/AND32.v -lang verilog -prj HOME_VER -o AND32.spl -module AND32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 AND32.spl E:/VERILOG_2024/HOME_VER/AND32.sym 
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/AND32.v -lang verilog -prj HOME_VER -o AND32.spl -module AND32 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 AND32.spl E:/VERILOG_2024/HOME_VER/AND32.sym 

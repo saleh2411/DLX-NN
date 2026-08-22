@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/CNT16.v -lang verilog -prj HOME_VER -o CNT16.spl -module CNT16 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 CNT16.spl E:/VERILOG_2024/HOME_VER/CNT16.sym 

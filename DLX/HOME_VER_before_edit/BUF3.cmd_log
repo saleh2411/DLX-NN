@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/VERILOG_2024/HOME_VER/BUF3.v -lang verilog -prj HOME_VER -o BUF3.spl -module BUF3 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 BUF3.spl E:/VERILOG_2024/HOME_VER/BUF3.sym 

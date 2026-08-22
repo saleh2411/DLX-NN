@@ -1,0 +1,11 @@
+MODULE ex_top_sch
+	SUBMODULE ex_reg_ver
+		INSTANCE XLXI_1
+	SUBMODULE ex_reg_ver
+		INSTANCE XLXI_2
+	SUBMODULE ex_mux_ver
+		INSTANCE XLXI_3
+	SUBMODULE ex_buf_ver
+		INSTANCE XLXI_4
+	SUBMODULE ex_buf_ver
+		INSTANCE XLXI_5

@@ -1,0 +1,17 @@
+[Inputs]
+clk
+step_en
+ack_n
+reset
+[Outputs]
+wr_n
+as_n
+stop_n
+in_init
+=D_OUT[31:0]=
+=ADD_OUT[31:0]=
+=state[1:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel write_machine
+

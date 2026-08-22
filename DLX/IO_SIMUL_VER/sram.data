@@ -1,0 +1,36 @@
+
+					
+					
+	 //				* Instructions
+					
+8C010011 //	start: 	lw R1 R0 data1 	*R1=M(data1)=0x1
+8C020012 //		lw R2 R0 data2 	*R2=M(data2)=0x1234567
+8C030013 //		lw R3 R0 data3 	*R3=M(data3)=0xfedec987
+8C040014 //		lw R4 R0 data4 	*R4=M(data4)=0xabcdef01
+					
+AC01000D //		sw R1 R0 adr1 	*M(adr1)=R1
+AC02000E //		sw R2 R0 adr2 	*M(adr2)=R2
+AC03000F //		sw R3 R0 adr3 	*M(adr3)=R3
+AC040010 //		sw R4 R0 adr4 	*M(adr4)=R4
+						
+AC04000D //		sw R4 R0 adr1 	*M(adr1)=R4
+AC03000E //		sw R3 R0 adr2 	*M(adr2)=R3
+AC02000F //		sw R2 R0 adr3 	*M(adr3)=R2
+AC010010 //		sw R1 R0 adr4 	*M(adr4)=R1
+					
+FC000000 //		halt 		*HALT instruction
+
+	 //				* destination area
+00000000 //	adr1: 	ds 1
+00000000 //	adr2: 	ds 1
+00000000 //	adr3: 	ds 1
+00000000 //	adr4: 	ds 1
+					
+	 //				* constant data
+00000001 //	data1: 	dc 0x1
+01234567 //	data2: 	dc 0x1234567
+FEDEC987 //	data3: 	dc 0xfedec987
+ABCDEF01 //	data4: 	dc 0xabcdef01
+					
+					
+

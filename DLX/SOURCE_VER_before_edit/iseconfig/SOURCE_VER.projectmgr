@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="SOURCE_VER" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DLX E:|adlx|B1|Week7|SOURCE_VER|DLX.v</ClosedNode>
+         <ClosedNode>/DualPortSdram - arch C:|Users|administrator.CLS-210-PC|Desktop|saed|Lab_base|IO_LOGIC_U|SdramCntl.vhd</ClosedNode>
+         <ClosedNode>/DualPortSdram - arch E:|Lab_base|IO_LOGIC_U|SdramCntl.vhd</ClosedNode>
+         <ClosedNode>/HostIoToRam - arch C:|Users|administrator.CLS-210-PC|Desktop|saed|Lab_base|IO_LOGIC_U|HostIoToDut_U.vhd</ClosedNode>
+         <ClosedNode>/HostIoToRam - arch E:|Lab_base|IO_LOGIC_U|HostIoToDut_U.vhd</ClosedNode>
+         <ClosedNode>/SyncBusToClock - arch C:|Users|administrator.CLS-210-PC|Desktop|saed|Lab_base|IO_LOGIC_U|SyncToClk.vhd</ClosedNode>
+         <ClosedNode>/SyncBusToClock - arch E:|Lab_base|IO_LOGIC_U|SyncToClk.vhd</ClosedNode>
+         <ClosedNode>/Top_Level C:|Users|administrator.CLS-210-PC|Desktop|saed|saleh|Week7|SOURCE_VER_before_edit|Top_Level.sch/XLXI_50 - DLX/u_data_path - data_path</ClosedNode>
+         <ClosedNode>/Top_Level E:|LAB_2024B|VERILOG_2024|Student_Projects|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|LAB_2024B|VERILOG_2024|Student_Projects|SOURCE_VER|Top_Level.sch/XLXI_27 - master_ver</ClosedNode>
+         <ClosedNode>/Top_Level E:|VERILOG_2024|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_3|New_source|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_3|New_source|SOURCE_VER|Top_Level.sch/XLXI_27 - master_ver</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_5|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_5|SOURCE_VER|Top_Level.sch/XLXI_30 - monitor_salve</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_5|SOURCE_VER|Top_Level.sch/XLXI_30 - monitor_salve/LA - logic_analyzer</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_5|SOURCE_VER|Top_Level.sch/XLXI_30 - monitor_salve/slave - salve_top</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER_before_edit|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER_before_edit|Top_Level.sch/XLXI_30 - monitor_salve</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER_before_edit|Top_Level.sch/XLXI_49 - DLX</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER|Top_Level.sch/XLXI_30 - monitor_salve</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER|Top_Level.sch/XLXI_45 - DLX</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER|Top_Level.sch/XLXI_49 - DLX/u_control - control</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|Week7|SOURCE_VER|Top_Level.sch/XLXI_49 - DLX/u_data_path - data_path</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|EXAMPLES_25b|SOURCE_VER|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|EXAMPLES|SOURCE_VERa|Top_Level.sch/XLXI_23 - IO_LOGIC_U - BEHAVIORAL</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|EXAMPLES|SOURCE_VERa|Top_Level.sch/XLXI_27 - master_ver</ClosedNode>
+         <ClosedNode>/master_ver E:|adlx|B1|WEEK_5|SOURCE_VER|master_ver.sch</ClosedNode>
+         <ClosedNode>/master_ver E:|adlx|B1|Week7|SOURCE_VER|master_ver.sch</ClosedNode>
+         <ClosedNode>/monitor_salve E:|adlx|B1|WEEK_4|SOURCE_VER|monitor_slave.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ctrl - dlx_control (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/dlx_control.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >26</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000034b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000034b0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>ctrl - dlx_control (C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_edit/dlx_control.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000010600000001000000000000004a0000000100000000000000660000000100000000000001dc0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>C:\Users\administrator.CLS-210-PC\Desktop\saed\Lab_base\IO_LOGIC_U\ClkGen_U.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a50000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000017d0000016d01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DualPortSdram - arch C:|Users|administrator.CLS-210-PC|Desktop|saed|Lab_base|IO_LOGIC_U|SdramCntl.vhd</ClosedNode>
+         <ClosedNode>/DualPortSdram - arch E:|Lab_base|IO_LOGIC_U|SdramCntl.vhd</ClosedNode>
+         <ClosedNode>/HostIoToRam - arch C:|Users|administrator.CLS-210-PC|Desktop|saed|Lab_base|IO_LOGIC_U|HostIoToDut_U.vhd</ClosedNode>
+         <ClosedNode>/HostIoToRam - arch E:|Lab_base|IO_LOGIC_U|HostIoToDut_U.vhd</ClosedNode>
+         <ClosedNode>/SyncBusToClock - arch E:|Lab_base|IO_LOGIC_U|SyncToClk.vhd</ClosedNode>
+         <ClosedNode>/Top_Level C:|Users|administrator.CLS-210-PC|Desktop|saed|saleh|Week7|SOURCE_VER_before_edit|Top_Level.sch</ClosedNode>
+         <ClosedNode>/Top_Level E:|adlx|B1|WEEK_3|New_source|SOURCE_VER|Top_Level.sch</ClosedNode>
+         <ClosedNode>/top_slave_tb E:|adlx|B1|WEEK_3|New_source|SOURCE_VER|top_slave_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000309000000020000000000000000000000000200000064ffffffff000000810000000300000002000003090000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+</Project>

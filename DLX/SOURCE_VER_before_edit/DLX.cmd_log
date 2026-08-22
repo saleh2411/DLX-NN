@@ -1,0 +1,6 @@
+vhdtdtfi -lib work E:/adlx/B1/Week7/SOURCE_VER/DLX.v -lang verilog -prj SOURCE_VER -o DLX.spl -module DLX -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DLX.spl E:/adlx/B1/Week7/SOURCE_VER/DLX.sym 
+vhdtdtfi -lib work E:/adlx/B1/Week7/SOURCE_VER/DLX.v -lang verilog -prj SOURCE_VER -o DLX.spl -module DLX -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DLX.spl E:/adlx/B1/Week7/SOURCE_VER/DLX.sym 
+vhdtdtfi -lib work C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/DLX.v -lang verilog -prj SOURCE_VER -o DLX.spl -module DLX -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 DLX.spl C:/Users/administrator.CLS-210-PC/Desktop/saed/final_simple_DLX/Week7/SOURCE_VER_before_edit/DLX.sym 

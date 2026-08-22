@@ -1,0 +1,9 @@
+
+##Created by Constraints Editor (xc6slx25-ftg256-2) - 2015/02/16
+NET "fpgaClk_i" TNM_NET = fpgaClk_i;
+TIMESPEC TS_fpgaClk_i = PERIOD "fpgaClk_i" 12 MHz HIGH 50%;
+NET "sdClkFb_i" TNM_NET = sdClkFb_i;
+TIMESPEC TS_sdClkFb_i = PERIOD "sdClkFb_i" 40 MHz HIGH 50%;
+##Created by Constraints Editor (xc6slx25-ftg256-2) - 2016/01/03
+#NET "XLXI_23/u1/drck_s" TNM_NET = XLXI_23/u1/drck_s;
+#TIMESPEC TS_XLXI_23_u1_drck_s = PERIOD "XLXI_23/u1/drck_s" 26 MHz HIGH 50%;

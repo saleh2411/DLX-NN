@@ -1,0 +1,61 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc
+C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf -uc
+SOURCE.ucf -p xc6slx25-ftg256-2 Top_Level.ngc Top_Level.ngd
+
+Reading NGO file
+"C:/Users/administrator.CLS-210-PC/Desktop/saed/saleh/Week7/SOURCE_VER_before_ed
+it/Top_Level.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/administrator.CLS-210-PC/Desktop/saed/Lab_base/IO_LOGIC_U/XuLA2.ucf"
+...
+Annotating constraints to design from ucf file "SOURCE.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'fpgaClk_i', used in period specification
+   'TS_fpgaClk_i', was traced into DCM_SP instance XLXI_23/u0/u0. The following
+   new TNM groups and period specifications were generated at the DCM_SP
+   output(s): 
+   CLKFX: <TIMESPEC TS_XLXI_23_u0_genClkP_s = PERIOD "XLXI_23_u0_genClkP_s"
+   TS_fpgaClk_i * 5 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'fpgaClk_i', used in period specification
+   'TS_fpgaClk_i', was traced into DCM_SP instance XLXI_23/u0/u0. The following
+   new TNM groups and period specifications were generated at the DCM_SP
+   output(s): 
+   CLKFX180: <TIMESPEC TS_XLXI_23_u0_genClkN_s = PERIOD "XLXI_23_u0_genClkN_s"
+   TS_fpgaClk_i * 5 PHASE 8.333333333 ns HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value
+   (83.3333333333333) was detected for the CLKIN_PERIOD attribute on DCM
+   "XLXI_23/u0/u0".  This does not match the PERIOD constraint value (12 MHz.). 
+   The uncertainty calculation will use the non-default attribute value.  This
+   could result in incorrect uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 4414532 kilobytes
+
+Writing NGD file "Top_Level.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "Top_Level.bld"...

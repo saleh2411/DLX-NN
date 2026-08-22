@@ -1,0 +1,10 @@
+[Inputs]
+CLK
+RST
+CE
+[Outputs]
+=CNT[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel CNT16
+
