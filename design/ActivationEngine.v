@@ -106,15 +106,6 @@ module ActivationEngine(
     // =========================================================================
     reg [31:0] data_out_mux;
 
-    // always @(*) begin
-    //     case (func_sel)
-    //         SIGMOID: data_out_mux = sigmoid_out;
-    //         TANH:    data_out_mux = sigmoid_out;
-    //         GELU:    data_out_mux = sigmoid_out;
-    //         RELU:    data_out_mux = relu_out;
-    //         default: data_out_mux = 32'b0;
-    //     endcase
-    // end
     
 
     assign data_out = (ACTIVATION_sel == 1'b0) ? sigmoid_out : relu_out;
