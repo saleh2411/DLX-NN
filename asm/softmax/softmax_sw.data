@@ -1,0 +1,224 @@
+// ============================================================================
+// SOFTMAX - PURE SOFTWARE (baseline, bit-exact replica)
+// ============================================================================
+// Source     : asm/softmax/softmax_online_sw.s   (assembled listing asm/softmax/softmax_online_sw.lst)
+// Format     : flat $readmemh image - one 32-bit word per line, bare hex,
+//              consecutive WORD addresses starting at 0x00. // comments OK.
+// Numbers    : Q16.16 signed fixed point  (real r  <->  round(r * 65536)).
+//
+// >>>>>>>>>>>>>>>>>>>>>>  OUTPUT ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0xAE   outvec[0]
+//   0xAF   outvec[1]
+//   0xB0   outvec[2]
+//   0xB1   outvec[3]
+// >>>>>>>>>>>>>>>>>>>>>>  INPUT  ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x05 = 00010000   invec[0]
+//   0x06 = 00020000   invec[1]
+//   0x07 = 00030000   invec[2]
+//   0x08 = 00040000   invec[3]
+//
+// Path       : SOFTWARE only (no activation opcode used)
+// Pairs with : softmax_hw.data
+// Both files run the SAME math on the SAME input - the only difference is
+// who does the work, so the cycle counts are directly comparable.
+//
+// Math       : Algorithm 3 online softmax: single-pass running max m with
+//   d rescaled by shift_exp(m_old - m_new) each time m grows, then
+//   y_j = shift_exp(x_j - m_N) * pwl_reciprocal(d).
+//   HW: softmax_crtl_fsm.v + shift_exp.v + pwl_reciprocal.v.
+//   SW: asm/softmax/softmax_online_sw.s - reproduces the SAME truncating recurrence,
+//   so it is BIT-EXACT with the HW (asm/softmax/softmax_sw.s is two-pass and is NOT).
+//
+// Program image is 190 words (0x00 .. 0xBD). Halt = FFFF****.
+// ============================================================================
+
+2C010031 // 0x00: start: addi R1 R0 maincode * R1 = address of main
+583F3442 // 0x01: jr R1 * jump to main
+C3FF2964 // 0x02: special-nop
+C3FF3028 // 0x03: special-nop
+00000004 // 0x04: cN: dc 0x4 * vector length N (<= 16). EDIT ME.
+00010000 // 0x05: invec: dc 0x10000 * x0 = 1.0 in Q16.16. EDIT ME.
+00020000 // 0x06: dc 0x20000 * x1 = 2.0
+00030000 // 0x07: dc 0x30000 * x2 = 3.0
+00040000 // 0x08: dc 0x40000 * x3 = 4.0
+00000000 // 0x09: dc 0x0
+00000000 // 0x0A: dc 0x0
+00000000 // 0x0B: dc 0x0
+00000000 // 0x0C: dc 0x0
+00000000 // 0x0D: dc 0x0
+00000000 // 0x0E: dc 0x0
+00000000 // 0x0F: dc 0x0
+00000000 // 0x10: dc 0x0
+00000000 // 0x11: dc 0x0
+00000000 // 0x12: dc 0x0
+00000000 // 0x13: dc 0x0
+00000000 // 0x14: dc 0x0
+00000000 // 0x15: dc 0x0
+00000000 // 0x16: dc 0x0
+00000000 // 0x17: dc 0x0
+00000000 // 0x18: dc 0x0
+00000000 // 0x19: dc 0x0
+00000000 // 0x1A: dc 0x0
+00000000 // 0x1B: dc 0x0
+00000000 // 0x1C: dc 0x0
+00000000 // 0x1D: dc 0x0
+00000000 // 0x1E: dc 0x0
+00010000 // 0x1F: cONE: dc 0x10000 * 1.0 in Q16.16
+0000FFFF // 0x20: cMASK: dc 0xffff * low-16-bit mask
+FFFF85EF // 0x21: cAtab: dc 0xffff85ef * a_q seg 0 (slope, negative)
+FFFFE17C // 0x22: dc 0xffffe17c * a_q seg 1
+FFFFF85F // 0x23: dc 0xfffff85f * a_q seg 2
+FFFFFE18 // 0x24: dc 0xfffffe18 * a_q seg 3
+FFFFFF86 // 0x25: dc 0xffffff86 * a_q seg 4
+FFFFFFE1 // 0x26: dc 0xffffffe1 * a_q seg 5
+FFFFFFF8 // 0x27: dc 0xfffffff8 * a_q seg 6
+FFFFFFFE // 0x28: dc 0xfffffffe * a_q seg 7
+0001688C // 0x29: cBtab: dc 0x1688c * b_q seg 0 (intercept)
+0000B446 // 0x2A: dc 0xb446 * b_q seg 1
+00005A23 // 0x2B: dc 0x5a23 * b_q seg 2
+00002D11 // 0x2C: dc 0x2d11 * b_q seg 3
+00001688 // 0x2D: dc 0x1688 * b_q seg 4
+00000B44 // 0x2E: dc 0xb44 * b_q seg 5
+000005A2 // 0x2F: dc 0x5a2 * b_q seg 6
+000002D1 // 0x30: dc 0x2d1 * b_q seg 7
+8C0B0004 // 0x31: maincode: lw R11 R0 cN * R11 = N
+2C070087 // 0x32: addi R7 R0 sexpsub * R7 = &sexpsub
+8C0C0005 // 0x33: lw R12 R0 invec * m = x0
+8C0D001F // 0x34: lw R13 R0 cONE * d = 1.0 (see header: a=0, b=sexp(0))
+2C0A0001 // 0x35: addi R10 R0 0x1 * i = 1
+016A2822 // 0x36: ploop: sub R5 R11 R10 * N - i
+10BF0011 // 0x37: beqz R5 pdone * i == N -> pass 1 finished
+2C060005 // 0x38: addi R6 R0 invec
+00CA3023 // 0x39: add R6 R6 R10 * &invec[i] (word addressing: base + i)
+8CCF0000 // 0x3A: lw R15 R6 0x0 * R15 = x_i (survives sexpsub)
+2D880000 // 0x3B: addi R8 R12 0x0 * m_new = m
+018F2822 // 0x3C: sub R5 R12 R15 * m - x_i
+70A50000 // 0x3D: slti R5 R5 0x0000 * 1 if m < x_i
+10BF0001 // 0x3E: beqz R5 pnomax
+2DE80000 // 0x3F: addi R8 R15 0x0 * m_new = x_i
+01880822 // 0x40: pnomax: sub R1 R12 R8
+5CFF2964 // 0x41: jalr R7 * R2 = rescale
+F9A24800 // 0x42: dc 0xF9A24800 * mult: R9 = (R13 * R2) >> 16
+01E80822 // 0x43: sub R1 R15 R8
+5CFF3028 // 0x44: jalr R7 * R2 = b
+01226823 // 0x45: add R13 R9 R2
+2D0C0000 // 0x46: addi R12 R8 0x0
+2D4A0001 // 0x47: addi R10 R10 0x1
+101FFFED // 0x48: beqz R0 ploop
+2DA40000 // 0x49: pdone: addi R4 R13 0x0 * copy d
+009F2002 // 0x4A: srli R4 R4 * >> 1
+009F2002 // 0x4B: srli R4 R4 * >> 2
+009F2002 // 0x4C: srli R4 R4 * >> 3
+009F2002 // 0x4D: srli R4 R4 * >> 4
+009F2002 // 0x4E: srli R4 R4 * >> 5
+009F2002 // 0x4F: srli R4 R4 * >> 6
+009F2002 // 0x50: srli R4 R4 * >> 7
+009F2002 // 0x51: srli R4 R4 * >> 8
+009F2002 // 0x52: srli R4 R4 * >> 9
+009F2002 // 0x53: srli R4 R4 * >> 10
+009F2002 // 0x54: srli R4 R4 * >> 11
+009F2002 // 0x55: srli R4 R4 * >> 12
+009F2002 // 0x56: srli R4 R4 * >> 13
+009F2002 // 0x57: srli R4 R4 * >> 14
+009F2002 // 0x58: srli R4 R4 * >> 15
+009F2002 // 0x59: srli R4 R4 * >> 16 -> R4 = int(d)
+2C030007 // 0x5A: addi R3 R0 0x7 * seg = 7
+6C850080 // 0x5B: sgei R5 R4 0x0080 * int(d) >= 128 ?
+14BF0013 // 0x5C: bnez R5 segdone
+2C030006 // 0x5D: addi R3 R0 0x6
+6C850040 // 0x5E: sgei R5 R4 0x0040
+14BF0010 // 0x5F: bnez R5 segdone
+2C030005 // 0x60: addi R3 R0 0x5
+6C850020 // 0x61: sgei R5 R4 0x0020
+14BF000D // 0x62: bnez R5 segdone
+2C030004 // 0x63: addi R3 R0 0x4
+6C850010 // 0x64: sgei R5 R4 0x0010
+14BF000A // 0x65: bnez R5 segdone
+2C030003 // 0x66: addi R3 R0 0x3
+6C850008 // 0x67: sgei R5 R4 0x0008
+14BF0007 // 0x68: bnez R5 segdone
+2C030002 // 0x69: addi R3 R0 0x2
+6C850004 // 0x6A: sgei R5 R4 0x0004
+14BF0004 // 0x6B: bnez R5 segdone
+2C030001 // 0x6C: addi R3 R0 0x1
+6C850002 // 0x6D: sgei R5 R4 0x0002
+14BF0001 // 0x6E: bnez R5 segdone
+2C030000 // 0x6F: addi R3 R0 0x0 * seg 0: d in [1,2)
+2C060021 // 0x70: segdone: addi R6 R0 cAtab
+00C33023 // 0x71: add R6 R6 R3
+8CC10000 // 0x72: lw R1 R6 0x0 * R1 = a_q
+F82D1000 // 0x73: dc 0xF82D1000 * mult #2: R2 = (R1 * R13) >> 16 = a_q*d
+2C060029 // 0x74: addi R6 R0 cBtab
+00C33023 // 0x75: add R6 R6 R3
+8CC10000 // 0x76: lw R1 R6 0x0 * R1 = b_q
+00417023 // 0x77: add R14 R2 R1 * recip = a_q*d + b_q
+2C0A0000 // 0x78: addi R10 R0 0x0 * i = 0
+016A2822 // 0x79: yloop: sub R5 R11 R10
+10BF000B // 0x7A: beqz R5 ydone
+2C060005 // 0x7B: addi R6 R0 invec
+00CA3023 // 0x7C: add R6 R6 R10
+8CCF0000 // 0x7D: lw R15 R6 0x0 * R15 = x_i
+01EC0822 // 0x7E: sub R1 R15 R12 * u = x_i - m (<= 0)
+5CFF8400 // 0x7F: jalr R7 * R2 = f_i
+F84E4800 // 0x80: dc 0xF84E4800 * mult #3: R9 = (R2 * R14) >> 16 = f_i*recip
+2C0600AE // 0x81: addi R6 R0 outvec
+00CA3023 // 0x82: add R6 R6 R10 * R6 was clobbered by sexpsub -- rebuild
+ACC90000 // 0x83: sw R9 R6 0x0 * outvec[i] = y_i
+2D4A0001 // 0x84: addi R10 R10 0x1
+101FFFF3 // 0x85: beqz R0 yloop
+FFFF0000 // 0x86: ydone: halt
+00011822 // 0x87: sexpsub: sub R3 R0 R1 * w = -u (w >= 0)
+2C640001 // 0x88: addi R4 R3 0x1 * w + 1
+009F2002 // 0x89: srli R4 R4 * t = (w+1)>>1 (= ceil(w/2))
+00641823 // 0x8A: add R3 R3 R4 * n = w + t = -1.5u (n = -v >= 0)
+2C640000 // 0x8B: addi R4 R3 0x0
+009F2002 // 0x8C: srli R4 R4 * >> 1
+009F2002 // 0x8D: srli R4 R4 * >> 2
+009F2002 // 0x8E: srli R4 R4 * >> 3
+009F2002 // 0x8F: srli R4 R4 * >> 4
+009F2002 // 0x90: srli R4 R4 * >> 5
+009F2002 // 0x91: srli R4 R4 * >> 6
+009F2002 // 0x92: srli R4 R4 * >> 7
+009F2002 // 0x93: srli R4 R4 * >> 8
+009F2002 // 0x94: srli R4 R4 * >> 9
+009F2002 // 0x95: srli R4 R4 * >> 10
+009F2002 // 0x96: srli R4 R4 * >> 11
+009F2002 // 0x97: srli R4 R4 * >> 12
+009F2002 // 0x98: srli R4 R4 * >> 13
+009F2002 // 0x99: srli R4 R4 * >> 14
+009F2002 // 0x9A: srli R4 R4 * >> 15
+009F2002 // 0x9B: srli R4 R4 * >> 16 -> q
+8C060020 // 0x9C: lw R6 R0 cMASK
+00662826 // 0x9D: and R5 R3 R6 * r = n & 0xFFFF
+10BF0003 // 0x9E: beqz R5 sxnofr * r == 0: frac = 0, shift = q
+2C840001 // 0x9F: addi R4 R4 0x1 * shift = q + 1 (ceil)
+8C06001F // 0xA0: lw R6 R0 cONE
+00C52822 // 0xA1: sub R5 R6 R5 * frac = 1.0 - r
+6486001F // 0xA2: sxnofr: sgti R6 R4 0x001f * shift > 31 ?
+10DF0002 // 0xA3: beqz R6 sxshift
+00001023 // 0xA4: add R2 R0 R0 * underflow: out = 0
+5BFF695F // 0xA5: jr R31
+00BF2802 // 0xA6: sxshift: srli R5 R5 * frac/2
+8C06001F // 0xA7: lw R6 R0 cONE
+00A61023 // 0xA8: add R2 R5 R6 * base = 1.0 + frac/2
+109F0003 // 0xA9: sxloop: beqz R4 sxret * shift base right 'shift' times
+005F1002 // 0xAA: srli R2 R2
+2C84FFFF // 0xAB: addi R4 R4 -1
+101FFFFC // 0xAC: beqz R0 sxloop
+5BFF000F // 0xAD: sxret: jr R31
+00000000 // 0xAE: outvec: dc 0x0
+00000000 // 0xAF: dc 0x0
+00000000 // 0xB0: dc 0x0
+00000000 // 0xB1: dc 0x0
+00000000 // 0xB2: dc 0x0
+00000000 // 0xB3: dc 0x0
+00000000 // 0xB4: dc 0x0
+00000000 // 0xB5: dc 0x0
+00000000 // 0xB6: dc 0x0
+00000000 // 0xB7: dc 0x0
+00000000 // 0xB8: dc 0x0
+00000000 // 0xB9: dc 0x0
+00000000 // 0xBA: dc 0x0
+00000000 // 0xBB: dc 0x0
+00000000 // 0xBC: dc 0x0
+00000000 // 0xBD: dc 0x0

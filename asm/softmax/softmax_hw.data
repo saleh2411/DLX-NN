@@ -1,0 +1,50 @@
+// ============================================================================
+// SOFTMAX - HARDWARE ACCELERATED (DMA engine)
+// ============================================================================
+// Source     : asm/softmax/softmax_hw.s   (assembled listing asm/softmax/softmax_hw.lst)
+// Format     : flat $readmemh image - one 32-bit word per line, bare hex,
+//              consecutive WORD addresses starting at 0x00. // comments OK.
+// Numbers    : Q16.16 signed fixed point  (real r  <->  round(r * 65536)).
+//
+// >>>>>>>>>>>>>>>>>>>>>>  OUTPUT ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x08   outvec[0]
+//   0x09   outvec[1]
+//   0x0A   outvec[2]
+//   0x0B   outvec[3]
+// >>>>>>>>>>>>>>>>>>>>>>  INPUT  ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x04 = 00010000   invec[0]
+//   0x05 = 00020000   invec[1]
+//   0x06 = 00030000   invec[2]
+//   0x07 = 00040000   invec[3]
+//
+// Path       : HARDWARE activation instruction
+// Pairs with : softmax_sw.data
+// Both files run the SAME math on the SAME input - the only difference is
+// who does the work, so the cycle counts are directly comparable.
+//
+// Math       : Algorithm 3 online softmax: single-pass running max m with
+//   d rescaled by shift_exp(m_old - m_new) each time m grows, then
+//   y_j = shift_exp(x_j - m_N) * pwl_reciprocal(d).
+//   HW: softmax_crtl_fsm.v + shift_exp.v + pwl_reciprocal.v.
+//   SW: asm/softmax/softmax_online_sw.s - reproduces the SAME truncating recurrence,
+//   so it is BIT-EXACT with the HW (asm/softmax/softmax_sw.s is two-pass and is NOT).
+//
+// Program image is 16 words (0x00 .. 0x0F). Halt = FFFF****.
+// ============================================================================
+
+2C01000C // 0x00: start: addi R1 R0 main * R1 = address of main
+583F6C65 // 0x01: jr R1 * jump to main
+C3FF003A // 0x02: special-nop
+C3FF3A6E // 0x03: special-nop
+00010000 // 0x04: invec: dc 0x10000 * x0 = 1.0 EDIT ME
+00020000 // 0x05: invec1: dc 0x20000 * x1 = 2.0
+00030000 // 0x06: invec2: dc 0x30000 * x2 = 3.0
+00040000 // 0x07: invec3: dc 0x40000 * x3 = 4.0
+00000000 // 0x08: outvec: dc 0x0
+00000000 // 0x09: dc 0x0
+00000000 // 0x0A: dc 0x0
+00000000 // 0x0B: dc 0x0
+2C010004 // 0x0C: main: addi R1 R0 invec * R1 = &invec (input vector base)
+2C020008 // 0x0D: addi R2 R0 outvec * R2 = &outvec (output vector base)
+F4220004 // 0x0E: softmax R2 R1 0x4 * outvec[0..3] = softmax(invec[0..3])
+FFFF2054 // 0x0F: halt

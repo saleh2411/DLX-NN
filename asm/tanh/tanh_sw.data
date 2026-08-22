@@ -1,0 +1,108 @@
+// ============================================================================
+// TANH - PURE SOFTWARE (baseline)
+// ============================================================================
+// Source     : asm/tanh/tanh_sw.s   (assembled listing asm/tanh/tanh_sw.lst)
+// Format     : flat $readmemh image - one 32-bit word per line, bare hex,
+//              consecutive WORD addresses starting at 0x00. // comments OK.
+// Numbers    : Q16.16 signed fixed point  (real r  <->  round(r * 65536)).
+//
+// >>>>>>>>>>>>>>>>>>>>>>  OUTPUT ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x05   result
+// >>>>>>>>>>>>>>>>>>>>>>  INPUT  ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x04 = 00018000   input
+//
+// Path       : SOFTWARE only (no activation opcode used)
+// Pairs with : tanh_hw.data
+// Both files run the SAME math on the SAME input - the only difference is
+// who does the work, so the cycle counts are directly comparable.
+//
+// Math       : tanh(x) = 2*sigmoid(2x) - 1, over the SAME 5-segment PWL sigmoid.
+//   HW: sigmoid_subenv.v y_tanh.  SW: asm/tanh/tanh_sw.s (doubles in, doubles out).
+//
+// Program image is 84 words (0x00 .. 0x53). Halt = FFFF****.
+// ============================================================================
+
+2C010013 // 0x00: start: addi R1 R0 main * R1 = address of main
+583F4000 // 0x01: jr R1 * jump to main
+C3FF000F // 0x02: special-nop
+C3FF0000 // 0x03: special-nop
+00018000 // 0x04: input: dc 0x18000 * x = 1.5 in Q16.16 (1.5*65536). EDIT ME.
+00000000 // 0x05: result: dc 0x0
+00010000 // 0x06: cONE: dc 0x10000 * +1.0
+FFFF0000 // 0x07: cNEG1: dc 0xffff0000 * -1.0 (= -65536, two's complement)
+00050000 // 0x08: cX5: dc 0x50000 * 5.0 segment threshold
+00026000 // 0x09: cX2375: dc 0x26000 * 2.375 segment threshold
+00012000 // 0x0A: cX1125: dc 0x12000 * 1.125 segment threshold
+0000E000 // 0x0B: cX0875: dc 0xe000 * 0.875 segment threshold
+0000D800 // 0x0C: cB2732: dc 0xd800 * 0.84375 intercept (27/32)
+0000A000 // 0x0D: cB58: dc 0xa000 * 0.625 intercept (5/8)
+00009B27 // 0x0E: cBTAY: dc 0x9b27 * 0.6060586 intercept (Taylor repair @ z=1)
+00008000 // 0x0F: cB12: dc 0x8000 * 0.5 intercept (1/2)
+00000800 // 0x10: cS32: dc 0x800 * 1/32 slope (Q16.16) for mult
+00002000 // 0x11: cS8: dc 0x2000 * 1/8 slope (Q16.16) for mult
+00004000 // 0x12: cS4: dc 0x4000 * 1/4 slope (Q16.16) for mult
+8C010004 // 0x13: main: lw R1 R0 input * R1 = x_q
+003F0800 // 0x14: slli R1 R1 * R1 = 2*x = z (one left shift = *2)
+2C070026 // 0x15: addi R7 R0 sigsub * R7 = address of sigmoid subroutine
+5CFF0000 // 0x16: jalr R7 * R2 = sigma(z), R31 = return
+005F1000 // 0x17: slli R2 R2 * R2 = 2*sigma
+8C060006 // 0x18: lw R6 R0 cONE * R6 = 1.0
+00461022 // 0x19: sub R2 R2 R6 * R2 = 2*sigma - 1.0 (Q16.16, in [-1,1])
+8C060006 // 0x1A: lw R6 R0 cONE * R6 = 1.0
+00462822 // 0x1B: sub R5 R2 R6 * R5 = out - 1.0
+78A50000 // 0x1C: slei R5 R5 0x0000 * R5 = 1 if out <= 1.0
+14BF0001 // 0x1D: bnez R5 chklow * in range -> skip upper clamp
+00C01023 // 0x1E: add R2 R6 R0 * out = 1.0
+8C060007 // 0x1F: chklow: lw R6 R0 cNEG1 * R6 = -1.0
+00462822 // 0x20: sub R5 R2 R6 * R5 = out - (-1.0) = out + 1.0
+6CA50000 // 0x21: sgei R5 R5 0x0000 * R5 = 1 if out >= -1.0
+14BF0001 // 0x22: bnez R5 tdone * in range -> skip lower clamp
+00C01023 // 0x23: add R2 R6 R0 * out = -1.0
+AC020005 // 0x24: tdone: sw R2 R0 result * result = y_q
+FFFF4400 // 0x25: halt
+2C030000 // 0x26: sigsub: addi R3 R0 0x0000 * sign = 0
+70250000 // 0x27: slti R5 R1 0x0000 * R5 = 1 if z < 0
+10BF0002 // 0x28: beqz R5 sigpos * z >= 0 -> no mirror
+00010822 // 0x29: sub R1 R0 R1 * z = -z (now z >= 0)
+2C030001 // 0x2A: addi R3 R0 0x0001 * sign = 1
+8C060008 // 0x2B: sigpos: lw R6 R0 cX5 * R6 = 5.0
+00262822 // 0x2C: sub R5 R1 R6 * R5 = z - 5.0
+70A50000 // 0x2D: slti R5 R5 0x0000 * R5 = 1 if z < 5.0
+14BF0002 // 0x2E: bnez R5 sigseg2 * z < 5.0 -> next segment
+8C020006 // 0x2F: lw R2 R0 cONE * y = 1.0
+101F001F // 0x30: beqz R0 sigsign * apply sign, return
+8C060009 // 0x31: sigseg2: lw R6 R0 cX2375 * R6 = 2.375
+00262822 // 0x32: sub R5 R1 R6
+70A50000 // 0x33: slti R5 R5 0x0000 * R5 = 1 if z < 2.375
+14BF0005 // 0x34: bnez R5 sigseg3
+8C060010 // 0x35: lw R6 R0 cS32 * R6 = 1/32
+F8261000 // 0x36: mult R6 R1 0x1000 * R2 = (z * 1/32) >> 16 = z>>5
+8C06000C // 0x37: lw R6 R0 cB2732 * R6 = 0.84375
+00461023 // 0x38: add R2 R2 R6 * y = (z>>5) + 0.84375
+101F0016 // 0x39: beqz R0 sigsign
+8C06000A // 0x3A: sigseg3: lw R6 R0 cX1125 * R6 = 1.125
+00262822 // 0x3B: sub R5 R1 R6
+70A50000 // 0x3C: slti R5 R5 0x0000 * R5 = 1 if z < 1.125
+14BF0005 // 0x3D: bnez R5 sigseg4
+8C060011 // 0x3E: lw R6 R0 cS8 * R6 = 1/8
+F8261000 // 0x3F: mult R6 R1 0x1000 * R2 = (z * 1/8) >> 16 = z>>3
+8C06000D // 0x40: lw R6 R0 cB58 * R6 = 0.625
+00461023 // 0x41: add R2 R2 R6 * y = (z>>3) + 0.625
+101F000D // 0x42: beqz R0 sigsign
+8C06000B // 0x43: sigseg4: lw R6 R0 cX0875 * R6 = 0.875
+00262822 // 0x44: sub R5 R1 R6
+70A50000 // 0x45: slti R5 R5 0x0000 * R5 = 1 if z < 0.875
+14BF0005 // 0x46: bnez R5 sigseg5
+8C060011 // 0x47: lw R6 R0 cS8 * R6 = 1/8
+F8261000 // 0x48: mult R6 R1 0x1000 * R2 = (z * 1/8) >> 16 = z>>3
+8C06000E // 0x49: lw R6 R0 cBTAY * R6 = 0.6060586 (Taylor repair @ z=1)
+00461023 // 0x4A: add R2 R2 R6 * y = (z>>3) + 0.6060586
+101F0004 // 0x4B: beqz R0 sigsign
+8C060012 // 0x4C: sigseg5: lw R6 R0 cS4 * R6 = 1/4
+F8261000 // 0x4D: mult R6 R1 0x1000 * R2 = (z * 1/4) >> 16 = z>>2
+8C06000F // 0x4E: lw R6 R0 cB12 * R6 = 0.5
+00461023 // 0x4F: add R2 R2 R6 * y = (z>>2) + 0.5
+107F0002 // 0x50: sigsign: beqz R3 sigret * sign == 0 -> done
+8C060006 // 0x51: lw R6 R0 cONE * R6 = 1.0
+00C21022 // 0x52: sub R2 R6 R2 * y = 1.0 - y
+5BFF5220 // 0x53: sigret: jr R31 * return to caller

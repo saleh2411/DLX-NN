@@ -1,0 +1,35 @@
+// ============================================================================
+// GELU - HARDWARE ACCELERATED
+// ============================================================================
+// Source     : asm/gelu/gelu_hw.s   (assembled listing asm/gelu/gelu_hw.lst)
+// Format     : flat $readmemh image - one 32-bit word per line, bare hex,
+//              consecutive WORD addresses starting at 0x00. // comments OK.
+// Numbers    : Q16.16 signed fixed point  (real r  <->  round(r * 65536)).
+//
+// >>>>>>>>>>>>>>>>>>>>>>  OUTPUT ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x05   result
+// >>>>>>>>>>>>>>>>>>>>>>  INPUT  ADDRESS(ES)  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//   0x04 = 00018000   input
+//
+// Path       : HARDWARE activation instruction
+// Pairs with : gelu_sw.data
+// Both files run the SAME math on the SAME input - the only difference is
+// who does the work, so the cycle counts are directly comparable.
+//
+// Math       : gelu(x) = x * sigmoid(k*x), k = 1.70703125 built shift-add as
+//   x + x>>1 + x>>3 + x>>4 + x>>6 + x>>8, then one Q16.16 multiply.
+//   HW: sigmoid_subenv.v x_gelu/y_gelu.  SW: asm/gelu/gelu_sw.s (same shifts, mult instr).
+//
+// Program image is 10 words (0x00 .. 0x09). Halt = FFFF****.
+// ============================================================================
+
+2C010006 // 0x00: start: addi R1 R0 main * R1 = address of main
+583F726F // 0x01: jr R1 * jump to main
+C3FF0000 // 0x02: special-nop
+C3FF0000 // 0x03: special-nop
+00018000 // 0x04: input: dc 0x18000 * x = 1.5 in Q16.16 (1.5*65536). EDIT ME.
+00000000 // 0x05: result: dc 0x0
+8C010004 // 0x06: main: lw R1 R0 input * R1 = x_q (Q16.16 input)
+E8220000 // 0x07: gelu R2 R1 0x0 * R2 = gelu(R1) <-- HW activation unit
+AC020005 // 0x08: sw R2 R0 result * result = y_q (Q16.16 output)
+FFFF6E75 // 0x09: halt
