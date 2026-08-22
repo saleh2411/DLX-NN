@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/a_dlx_S25/student2/IOSimul_S25/SIMUL_T_isim_beh.exe" -prj "E:/a_dlx_S25/student2/IOSimul_S25/SIMUL_T_beh.prj" "work.SIMUL_T" 

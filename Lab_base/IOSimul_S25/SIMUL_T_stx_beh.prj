@@ -1,0 +1,4 @@
+vhdl isim_temp "sram_data.vhd"
+vhdl isim_temp "SRAM.VHD"
+vhdl isim_temp "IO_SIMUL.VHD"
+vhdl isim_temp "SIMUL_T.vhd"
